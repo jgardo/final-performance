@@ -1,0 +1,95 @@
+ImmutableOopMap{}pc offsets: 350 Compiled method (c2)     474  661       4       pl.jgardo.interfaces.InterfacesBenchmark::singleInteface (9 bytes)
+ total in heap  [0x00007f985047e890,0x00007f985047eba8] = 792
+ relocation     [0x00007f985047ea08,0x00007f985047ea20] = 24
+ main code      [0x00007f985047ea20,0x00007f985047eac0] = 160
+ stub code      [0x00007f985047eac0,0x00007f985047ead8] = 24
+ oops           [0x00007f985047ead8,0x00007f985047eae0] = 8
+ metadata       [0x00007f985047eae0,0x00007f985047eaf0] = 16
+ scopes data    [0x00007f985047eaf0,0x00007f985047eb20] = 48
+ scopes pcs     [0x00007f985047eb20,0x00007f985047eb90] = 112
+ dependencies   [0x00007f985047eb90,0x00007f985047eb98] = 8
+ nul chk table  [0x00007f985047eb98,0x00007f985047eba8] = 16
+----------------------------------------------------------------------
+pl/jgardo/interfaces/InterfacesBenchmark.singleInteface()I  [0x00007f985047ea20, 0x00007f985047ead8]  184 bytes
+Argument 0 is unknown.RIP: 0x7f985047ea20 Code size: 0x000000b8
+[Entry Point]
+[Constants]
+  # {method} {0x00007f9838b999b0} 'singleInteface' '()I' in 'pl/jgardo/interfaces/InterfacesBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007f985047ea20: mov     0x8(%rsi),%r10d
+  0x00007f985047ea24: shl     $0x3,%r10
+  0x00007f985047ea28: movabs  $0x800000000,%r12
+  0x00007f985047ea32: add     %r12,%r10
+  0x00007f985047ea35: xor     %r12,%r12
+  0x00007f985047ea38: cmp     %r10,%rax
+  0x00007f985047ea3b: jne     0x7f98489a4d00    ;   {runtime_call ic_miss_stub}
+  0x00007f985047ea41: nop
+  0x00007f985047ea44: nopl    0x0(%rax,%rax)
+  0x00007f985047ea4c: nop
+[Verified Entry Point]
+  0x00007f985047ea50: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f985047ea57: push    %rbp
+  0x00007f985047ea58: sub     $0x10,%rsp        ;*synchronization entry
+                                                ; - pl.jgardo.interfaces.InterfacesBenchmark::singleInteface@-1 (line 50)
+
+  0x00007f985047ea5c: movabs  $0x7164c6d80,%r10  ;   {oop(a 'java/lang/Class'{0x00000007164c6d80} = 'pl/jgardo/interfaces/InterfacesBenchmark')}
+  0x00007f985047ea66: mov     0x80(%r10),%r11d  ;*getstatic SINGLE_CLASS_INTERFACE {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.interfaces.InterfacesBenchmark::singleInteface@0 (line 50)
+
+  0x00007f985047ea6d: mov     0x8(%r12,%r11,8),%r10d  ; implicit exception: dispatches to 0x00007f985047eaa2
+  0x00007f985047ea72: cmp     $0x80126a8,%r10d  ;   {metadata('pl/jgardo/interfaces/SingleClass')}
+  0x00007f985047ea79: jne     0x7f985047ea90
+  0x00007f985047ea7b: mov     $0x5,%eax
+  0x00007f985047ea80: add     $0x10,%rsp
+  0x00007f985047ea84: pop     %rbp
+  0x00007f985047ea85: mov     0x108(%r15),%r10
+  0x00007f985047ea8c: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f985047ea8f: retq
+  0x00007f985047ea90: mov     $0xffffffde,%esi
+  0x00007f985047ea95: mov     %r11d,%ebp
+  0x00007f985047ea98: nop
+  0x00007f985047ea9b: callq   0x7f98489a6980    ; ImmutableOopMap{rbp=NarrowOop }
+                                                ;*invokeinterface someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.interfaces.InterfacesBenchmark::singleInteface@3 (line 50)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f985047eaa0: ud2
+  0x00007f985047eaa2: mov     $0xfffffff6,%esi
+  0x00007f985047eaa7: callq   0x7f98489a6980    ; ImmutableOopMap{}
+                                                ;*invokeinterface someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.interfaces.InterfacesBenchmark::singleInteface@3 (line 50)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f985047eaac: ud2                       ;*invokeinterface someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.interfaces.InterfacesBenchmark::singleInteface@3 (line 50)
+
+  0x00007f985047eaae: hlt
+  0x00007f985047eaaf: hlt
+  0x00007f985047eab0: hlt
+  0x00007f985047eab1: hlt
+  0x00007f985047eab2: hlt
+  0x00007f985047eab3: hlt
+  0x00007f985047eab4: hlt
+  0x00007f985047eab5: hlt
+  0x00007f985047eab6: hlt
+  0x00007f985047eab7: hlt
+  0x00007f985047eab8: hlt
+  0x00007f985047eab9: hlt
+  0x00007f985047eaba: hlt
+  0x00007f985047eabb: hlt
+  0x00007f985047eabc: hlt
+  0x00007f985047eabd: hlt
+  0x00007f985047eabe: hlt
+  0x00007f985047eabf: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f985047eac0: jmpq    0x7f9848a6b200    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f985047eac5: callq   0x7f985047eaca
+  0x00007f985047eaca: subq    $0x5,(%rsp)
+  0x00007f985047eacf: jmpq    0x7f98489a65a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f985047ead4: hlt
+  0x00007f985047ead5: hlt
+  0x00007f985047ead6: hlt
+  0x00007f985047ead7: hlt
+
+ImmutableOopMap{rbp=NarrowOop }pc offsets: 128
+ImmutableOopMap{}pc offsets: 140

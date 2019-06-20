@@ -1,0 +1,225 @@
+Code:
+Argument 0 is unknown.RIP: 0x7f2101222e80 Code size: 0x00000330
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007f3d784ea988} 'enumWithFinal' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark'
+  #           [sp+0x50]  (sp of caller)
+  0x00007f3d79222b80: mov     0x8(%rsi),%r10d
+  0x00007f3d79222b84: shl     $0x3,%r10
+  0x00007f3d79222b88: cmp     %rax,%r10
+  0x00007f3d79222b8b: jne     0x7f3d79045ba0    ;   {runtime_call}
+  0x00007f3d79222b91: nopw    0x0(%rax,%rax)
+  0x00007f3d79222b9c: nop
+[Verified Entry Point]
+  0x00007f3d79222ba0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f3d79222ba7: push    %rbp
+  0x00007f3d79222ba8: sub     $0x40,%rsp
+  0x00007f3d79222bac: movabs  $0x7f3d7850f638,%rax  ;   {metadata(method data for {method} {0x00007f3d784ea988} 'enumWithFinal' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark')}
+  0x00007f3d79222bb6: mov     0xdc(%rax),%edi
+  0x00007f3d79222bbc: add     $0x8,%edi
+  0x00007f3d79222bbf: mov     %edi,0xdc(%rax)
+  0x00007f3d79222bc5: movabs  $0x7f3d784ea988,%rax  ;   {metadata({method} {0x00007f3d784ea988} 'enumWithFinal' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark')}
+  0x00007f3d79222bcf: and     $0x1ff8,%edi
+  0x00007f3d79222bd5: cmp     $0x0,%edi
+  0x00007f3d79222bd8: je      0x7f3d79222d81    ;*getstatic ONE_PLUS_ONE
+                                                ; - pl.jgardo.field.enums.EnumFieldBenchmark::enumWithFinal@0 (line 80)
+
+  0x00007f3d79222bde: movabs  $0x76df0d838,%rax  ;   {oop(a 'pl/jgardo/field/enums/EnumFieldBenchmark$FinalSum')}
+  0x00007f3d79222be8: movabs  $0x7f3d7850f638,%rsi  ;   {metadata(method data for {method} {0x00007f3d784ea988} 'enumWithFinal' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark')}
+  0x00007f3d79222bf2: mov     0x8(%rax),%eax
+  0x00007f3d79222bf5: shl     $0x3,%rax
+  0x00007f3d79222bf9: cmp     0x110(%rsi),%rax
+  0x00007f3d79222c00: jne     0x7f3d79222c0f
+  0x00007f3d79222c02: addq    $0x1,0x118(%rsi)
+  0x00007f3d79222c0a: jmpq    0x7f3d79222c75
+  0x00007f3d79222c0f: cmp     0x120(%rsi),%rax
+  0x00007f3d79222c16: jne     0x7f3d79222c25
+  0x00007f3d79222c18: addq    $0x1,0x128(%rsi)
+  0x00007f3d79222c20: jmpq    0x7f3d79222c75
+  0x00007f3d79222c25: cmpq    $0x0,0x110(%rsi)
+  0x00007f3d79222c30: jne     0x7f3d79222c49
+  0x00007f3d79222c32: mov     %rax,0x110(%rsi)
+  0x00007f3d79222c39: movq    $0x1,0x118(%rsi)
+  0x00007f3d79222c44: jmpq    0x7f3d79222c75
+  0x00007f3d79222c49: cmpq    $0x0,0x120(%rsi)
+  0x00007f3d79222c54: jne     0x7f3d79222c6d
+  0x00007f3d79222c56: mov     %rax,0x120(%rsi)
+  0x00007f3d79222c5d: movq    $0x1,0x128(%rsi)
+  0x00007f3d79222c68: jmpq    0x7f3d79222c75
+  0x00007f3d79222c6d: addq    $0x1,0x108(%rsi)
+  0x00007f3d79222c75: movabs  $0x7f3d7850f518,%rax  ;   {metadata(method data for {method} {0x00007f3d7850f078} 'getSum' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark$FinalSum')}
+  0x00007f3d79222c7f: mov     0xdc(%rax),%esi
+  0x00007f3d79222c85: add     $0x8,%esi
+  0x00007f3d79222c88: mov     %esi,0xdc(%rax)
+  0x00007f3d79222c8e: movabs  $0x7f3d7850f078,%rax  ;   {metadata({method} {0x00007f3d7850f078} 'getSum' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark$FinalSum')}
+  0x00007f3d79222c98: and     $0x7ffff8,%esi
+  0x00007f3d79222c9e: cmp     $0x0,%esi
+  0x00007f3d79222ca1: je      0x7f3d79222d98
+  0x00007f3d79222ca7: movabs  $0x76df0d898,%rax  ;   {oop(a 'pl/jgardo/field/enums/EnumFieldBenchmark$FinalSum')}
+  0x00007f3d79222cb1: movabs  $0x7f3d7850f638,%rsi  ;   {metadata(method data for {method} {0x00007f3d784ea988} 'enumWithFinal' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark')}
+  0x00007f3d79222cbb: mov     0x8(%rax),%eax
+  0x00007f3d79222cbe: shl     $0x3,%rax
+  0x00007f3d79222cc2: cmp     0x140(%rsi),%rax
+  0x00007f3d79222cc9: jne     0x7f3d79222cd8
+  0x00007f3d79222ccb: addq    $0x1,0x148(%rsi)
+  0x00007f3d79222cd3: jmpq    0x7f3d79222d3e
+  0x00007f3d79222cd8: cmp     0x150(%rsi),%rax
+  0x00007f3d79222cdf: jne     0x7f3d79222cee
+  0x00007f3d79222ce1: addq    $0x1,0x158(%rsi)
+  0x00007f3d79222ce9: jmpq    0x7f3d79222d3e
+  0x00007f3d79222cee: cmpq    $0x0,0x140(%rsi)
+  0x00007f3d79222cf9: jne     0x7f3d79222d12
+  0x00007f3d79222cfb: mov     %rax,0x140(%rsi)
+  0x00007f3d79222d02: movq    $0x1,0x148(%rsi)
+  0x00007f3d79222d0d: jmpq    0x7f3d79222d3e
+  0x00007f3d79222d12: cmpq    $0x0,0x150(%rsi)
+  0x00007f3d79222d1d: jne     0x7f3d79222d36
+  0x00007f3d79222d1f: mov     %rax,0x150(%rsi)
+  0x00007f3d79222d26: movq    $0x1,0x158(%rsi)
+  0x00007f3d79222d31: jmpq    0x7f3d79222d3e
+  0x00007f3d79222d36: addq    $0x1,0x138(%rsi)
+  0x00007f3d79222d3e: movabs  $0x7f3d7850f518,%rax  ;   {metadata(method data for {method} {0x00007f3d7850f078} 'getSum' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark$FinalSum')}
+  0x00007f3d79222d48: mov     0xdc(%rax),%esi
+  0x00007f3d79222d4e: add     $0x8,%esi
+  0x00007f3d79222d51: mov     %esi,0xdc(%rax)
+  0x00007f3d79222d57: movabs  $0x7f3d7850f078,%rax  ;   {metadata({method} {0x00007f3d7850f078} 'getSum' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark$FinalSum')}
+  0x00007f3d79222d61: and     $0x7ffff8,%esi
+  0x00007f3d79222d67: cmp     $0x0,%esi
+  0x00007f3d79222d6a: je      0x7f3d79222daf
+  0x00007f3d79222d70: mov     $0x6,%eax
+  0x00007f3d79222d75: add     $0x40,%rsp
+  0x00007f3d79222d79: pop     %rbp
+  0x00007f3d79222d7a: test    %eax,0x18211380(%rip)  ;   {poll_return}
+  0x00007f3d79222d80: retq
+  0x00007f3d79222d81: mov     %rax,0x8(%rsp)
+  0x00007f3d79222d86: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f3d79222d8e: callq   0x7f3d790ff860    ; OopMap{rsi=Oop off=531}
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.enums.EnumFieldBenchmark::enumWithFinal@-1 (line 80)
+                                                ;   {runtime_call}
+  0x00007f3d79222d93: jmpq    0x7f3d79222bde
+  0x00007f3d79222d98: mov     %rax,0x8(%rsp)
+  0x00007f3d79222d9d: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f3d79222da5: callq   0x7f3d790ff860    ; OopMap{off=554}
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.enums.EnumFieldBenchmark$FinalSum::getSum@-1 (line 73)
+                                                ; - pl.jgardo.field.enums.EnumFieldBenchmark::enumWithFinal@3 (line 80)
+                                                ;   {runtime_call}
+  0x00007f3d79222daa: jmpq    0x7f3d79222ca7
+  0x00007f3d79222daf: mov     %rax,0x8(%rsp)
+  0x00007f3d79222db4: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f3d79222dbc: callq   0x7f3d790ff860    ; OopMap{off=577}
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.enums.EnumFieldBenchmark$FinalSum::getSum@-1 (line 73)
+                                                ; - pl.jgardo.field.enums.EnumFieldBenchmark::enumWithFinal@9 (line 80)
+                                                ;   {runtime_call}
+  0x00007f3d79222dc1: jmp     0x7f3d79222d70
+  0x00007f3d79222dc3: nop
+  0x00007f3d79222dc4: nop
+  0x00007f3d79222dc5: mov     0x290(%r15),%rax
+  0x00007f3d79222dcc: movabs  $0x0,%r10
+  0x00007f3d79222dd6: mov     %r10,0x290(%r15)
+  0x00007f3d79222ddd: movabs  $0x0,%r10
+  0x00007f3d79222de7: mov     %r10,0x298(%r15)
+  0x00007f3d79222dee: add     $0x40,%rsp
+  0x00007f3d79222df2: pop     %rbp
+  0x00007f3d79222df3: jmpq    0x7f3d790704e0    ;   {runtime_call}
+  0x00007f3d79222df8: hlt
+  0x00007f3d79222df9: hlt
+  0x00007f3d79222dfa: hlt
+  0x00007f3d79222dfb: hlt
+  0x00007f3d79222dfc: hlt
+  0x00007f3d79222dfd: hlt
+  0x00007f3d79222dfe: hlt
+  0x00007f3d79222dff: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f3d79222e00: callq   0x7f3d7906e220    ;   {no_reloc}
+  0x00007f3d79222e05: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f3d79222e0a: sub     $0x80,%rsp
+  0x00007f3d79222e11: mov     %rax,0x78(%rsp)
+  0x00007f3d79222e16: mov     %rcx,0x70(%rsp)
+  0x00007f3d79222e1b: mov     %rdx,0x68(%rsp)
+  0x00007f3d79222e20: mov     %rbx,0x60(%rsp)
+  0x00007f3d79222e25: mov     %rbp,0x50(%rsp)
+  0x00007f3d79222e2a: mov     %rsi,0x48(%rsp)
+  0x00007f3d79222e2f: mov     %rdi,0x40(%rsp)
+  0x00007f3d79222e34: mov     %r8,0x38(%rsp)
+  0x00007f3d79222e39: mov     %r9,0x30(%rsp)
+  0x00007f3d79222e3e: mov     %r10,0x28(%rsp)
+  0x00007f3d79222e43: mov     %r11,0x20(%rsp)
+  0x00007f3d79222e48: mov     %r12,0x18(%rsp)
+  0x00007f3d79222e4d: mov     %r13,0x10(%rsp)
+  0x00007f3d79222e52: mov     %r14,0x8(%rsp)
+  0x00007f3d79222e57: mov     %r15,(%rsp)
+  0x00007f3d79222e5b: movabs  $0x7f3d90133266,%rdi  ;   {external_word}
+  0x00007f3d79222e65: movabs  $0x7f3d79222e05,%rsi  ;   {internal_word}
+  0x00007f3d79222e6f: mov     %rsp,%rdx
+  0x00007f3d79222e72: and     $0xfffffffffffffff0,%rsp
+  0x00007f3d79222e76: callq   0x7f3d8fe447e0    ;   {runtime_call}
+  0x00007f3d79222e7b: hlt
+[Deopt Handler Code]
+  0x00007f3d79222e7c: movabs  $0x7f3d79222e7c,%r10  ;   {section_word}
+  0x00007f3d79222e86: push    %r10
+  0x00007f3d79222e88: jmpq    0x7f3d79047240    ;   {runtime_call}
+  0x00007f3d79222e8d: hlt
+  0x00007f3d79222e8e: hlt
+  0x00007f3d79222e8f: hlt
+OopMapSet contains 3 OopMaps
+
+#0
+OopMap{rsi=Oop off=531}
+#1
+OopMap{off=554}
+#2
+OopMap{off=577}
+Compiled method (c2)     637  490       4       pl.jgardo.field.enums.EnumFieldBenchmark::enumWithFinal (14 bytes)
+ total in heap  [0x00007f3d792262d0,0x00007f3d792264c8] = 504
+ relocation     [0x00007f3d792263f8,0x00007f3d79226408] = 16
+ main code      [0x00007f3d79226420,0x00007f3d79226460] = 64
+ stub code      [0x00007f3d79226460,0x00007f3d79226478] = 24
+ oops           [0x00007f3d79226478,0x00007f3d79226480] = 8
+ metadata       [0x00007f3d79226480,0x00007f3d79226488] = 8
+ scopes data    [0x00007f3d79226488,0x00007f3d79226490] = 8
+ scopes pcs     [0x00007f3d79226490,0x00007f3d792264c0] = 48
+ dependencies   [0x00007f3d792264c0,0x00007f3d792264c8] = 8
+Decoding compiled method 0x00007f3d792262d0:
+Code:
+Argument 0 is unknown.RIP: 0x7f3d79226420 Code size: 0x00000058
+[Entry Point]
+[Constants]
+  # {method} {0x00007f3d784ea988} 'enumWithFinal' '()I' in 'pl/jgardo/field/enums/EnumFieldBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007f3d79226420: mov     0x8(%rsi),%r10d
+  0x00007f3d79226424: shl     $0x3,%r10
+  0x00007f3d79226428: cmp     %r10,%rax
+  0x00007f3d7922642b: jne     0x7f3d79045ba0    ;   {runtime_call}
+  0x00007f3d79226431: nop
+  0x00007f3d79226434: nopl    0x0(%rax,%rax)
+  0x00007f3d7922643c: nop
+[Verified Entry Point]
+  0x00007f3d79226440: sub     $0x18,%rsp
+  0x00007f3d79226447: mov     %rbp,0x10(%rsp)   ;*synchronization entry
+                                                ; - pl.jgardo.field.enums.EnumFieldBenchmark::enumWithFinal@-1 (line 80)
+
+  0x00007f3d7922644c: mov     $0x6,%eax
+  0x00007f3d79226451: add     $0x10,%rsp
+  0x00007f3d79226455: pop     %rbp
+  0x00007f3d79226456: test    %eax,0x1820dba4(%rip)  ;   {poll_return}
+  0x00007f3d7922645c: retq
+  0x00007f3d7922645d: hlt
+  0x00007f3d7922645e: hlt
+  0x00007f3d7922645f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f3d79226460: jmpq    0x7f3d7906e120    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f3d79226465: callq   0x7f3d7922646a
+  0x00007f3d7922646a: subq    $0x5,(%rsp)
+  0x00007f3d7922646f: jmpq    0x7f3d79047240    ;   {runtime_call}
+  0x00007f3d79226474: hlt
+  0x00007f3d79226475: hlt
+  0x00007f3d79226476: hlt
+  0x00007f3d79226477: hlt
+OopMapSet contains 0 OopMaps

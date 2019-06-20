@@ -1,0 +1,301 @@
+Compiled method (c1)     450  640       3       pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField (8 bytes)
+ total in heap  [0x00007f7283b91e10,0x00007f7283b92378] = 1384
+ relocation     [0x00007f7283b91f88,0x00007f7283b91fc0] = 56
+ main code      [0x00007f7283b91fc0,0x00007f7283b921a0] = 480
+ stub code      [0x00007f7283b921a0,0x00007f7283b92230] = 144
+ oops           [0x00007f7283b92230,0x00007f7283b92238] = 8
+ metadata       [0x00007f7283b92238,0x00007f7283b92250] = 24
+ scopes data    [0x00007f7283b92250,0x00007f7283b922a0] = 80
+ scopes pcs     [0x00007f7283b922a0,0x00007f7283b92360] = 192
+ dependencies   [0x00007f7283b92360,0x00007f7283b92368] = 8
+ nul chk table  [0x00007f7283b92368,0x00007f7283b92378] = 16
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/field/bool/BooleanFieldBenchmark.nonFinalField()I  [0x00007f7283b91fc0, 0x00007f7283b92230]  624 bytes
+Argument 0 is unknown.RIP: 0x7f7283b91fc0 Code size: 0x00000270
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007f7280b49ee0} 'nonFinalField' '()I' in 'pl/jgardo/field/bool/BooleanFieldBenchmark'
+  #           [sp+0x40]  (sp of caller)
+  0x00007f7283b91fc0: mov     0x8(%rsi),%r10d
+  0x00007f7283b91fc4: shl     $0x3,%r10
+  0x00007f7283b91fc8: movabs  $0x800000000,%r12
+  0x00007f7283b91fd2: add     %r12,%r10
+  0x00007f7283b91fd5: xor     %r12,%r12
+  0x00007f7283b91fd8: cmp     %rax,%r10
+  0x00007f7283b91fdb: jne     0x7f7283512d00    ;   {runtime_call ic_miss_stub}
+  0x00007f7283b91fe1: nopw    0x0(%rax,%rax)
+  0x00007f7283b91fec: nop
+  0x00007f7283b91ff0: nopw    0x0(%rax,%rax)
+  0x00007f7283b91ffb: nop
+  0x00007f7283b91fff: nop
+[Verified Entry Point]
+  0x00007f7283b92000: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f7283b92007: push    %rbp
+  0x00007f7283b92008: sub     $0x30,%rsp
+  0x00007f7283b9200c: movabs  $0x7f7280b81ac8,%rax  ;   {metadata(method data for {method} {0x00007f7280b49ee0} 'nonFinalField' '()I' in 'pl/jgardo/field/bool/BooleanFieldBenchmark')}
+  0x00007f7283b92016: mov     0x104(%rax),%edi
+  0x00007f7283b9201c: add     $0x8,%edi
+  0x00007f7283b9201f: mov     %edi,0x104(%rax)
+  0x00007f7283b92025: and     $0x1ff8,%edi
+  0x00007f7283b9202b: cmp     $0x0,%edi
+  0x00007f7283b9202e: je      0x7f7283b92115    ;*aload_0 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@0 (line 61)
+
+  0x00007f7283b92034: mov     0xc(%rsi),%eax
+  0x00007f7283b92037: shl     $0x3,%rax         ;*getfield stateHolderNonFinal {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@1 (line 61)
+
+  0x00007f7283b9203b: cmp     (%rax),%rax       ;*invokevirtual doSth {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+                                                ; implicit exception: dispatches to 0x00007f7283b92136
+  0x00007f7283b9203e: mov     %rax,%rsi
+  0x00007f7283b92041: movabs  $0x7f7280b81ac8,%rdi  ;   {metadata(method data for {method} {0x00007f7280b49ee0} 'nonFinalField' '()I' in 'pl/jgardo/field/bool/BooleanFieldBenchmark')}
+  0x00007f7283b9204b: addq    $0x1,0x158(%rdi)
+  0x00007f7283b92053: movabs  $0x7f7280b81c80,%rsi  ;   {metadata(method data for {method} {0x00007f7280b81348} 'doSth' '()I' in 'pl/jgardo/field/bool/StateHolderNonFinal')}
+  0x00007f7283b9205d: mov     0x104(%rsi),%edi
+  0x00007f7283b92063: add     $0x8,%edi
+  0x00007f7283b92066: mov     %edi,0x104(%rsi)
+  0x00007f7283b9206c: and     $0x7ffff8,%edi
+  0x00007f7283b92072: cmp     $0x0,%edi
+  0x00007f7283b92075: je      0x7f7283b9213b
+  0x00007f7283b9207b: movsbl  0xc(%rax),%eax    ;*getfield featureOn {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@3 (line 16)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+
+  0x00007f7283b9207f: cmp     $0x0,%eax
+  0x00007f7283b92082: movabs  $0x7f7280b81c80,%rsi  ;   {metadata(method data for {method} {0x00007f7280b81348} 'doSth' '()I' in 'pl/jgardo/field/bool/StateHolderNonFinal')}
+  0x00007f7283b9208c: movabs  $0x150,%rdi
+  0x00007f7283b92096: jne     0x7f7283b920a6
+  0x00007f7283b9209c: movabs  $0x140,%rdi
+  0x00007f7283b920a6: mov     (%rsi,%rdi),%rbx
+  0x00007f7283b920aa: lea     0x1(%rbx),%rbx
+  0x00007f7283b920ae: mov     %rbx,(%rsi,%rdi)
+  0x00007f7283b920b2: jne     0x7f7283b920c2    ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@6 (line 16)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+
+  0x00007f7283b920b8: mov     $0x0,%esi
+  0x00007f7283b920bd: jmpq    0x7f7283b920c7
+  0x00007f7283b920c2: mov     $0x1,%esi         ;*aload_0 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@12 (line 20)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+
+  0x00007f7283b920c7: cmp     $0x0,%eax
+  0x00007f7283b920ca: movabs  $0x7f7280b81c80,%rax  ;   {metadata(method data for {method} {0x00007f7280b81348} 'doSth' '()I' in 'pl/jgardo/field/bool/StateHolderNonFinal')}
+  0x00007f7283b920d4: movabs  $0x160,%rdi
+  0x00007f7283b920de: je      0x7f7283b920ee
+  0x00007f7283b920e4: movabs  $0x170,%rdi
+  0x00007f7283b920ee: mov     (%rax,%rdi),%rbx
+  0x00007f7283b920f2: lea     0x1(%rbx),%rbx
+  0x00007f7283b920f6: mov     %rbx,(%rax,%rdi)
+  0x00007f7283b920fa: je      0x7f7283b92102    ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@16 (line 20)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+
+  0x00007f7283b92100: incl    %esi
+  0x00007f7283b92102: mov     %rsi,%rax
+  0x00007f7283b92105: add     $0x30,%rsp
+  0x00007f7283b92109: pop     %rbp
+  0x00007f7283b9210a: mov     0x108(%r15),%r10
+  0x00007f7283b92111: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f7283b92114: retq
+  0x00007f7283b92115: movabs  $0x7f7280b49ee0,%r10  ;   {metadata({method} {0x00007f7280b49ee0} 'nonFinalField' '()I' in 'pl/jgardo/field/bool/BooleanFieldBenchmark')}
+  0x00007f7283b9211f: mov     %r10,0x8(%rsp)
+  0x00007f7283b92124: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f7283b9212c: callq   0x7f72835de600    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@-1 (line 61)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f7283b92131: jmpq    0x7f7283b92034
+  0x00007f7283b92136: callq   0x7f72835d9920    ; ImmutableOopMap{rax=Oop }
+                                                ;*invokevirtual doSth {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f7283b9213b: movabs  $0x7f7280b81348,%r10  ;   {metadata({method} {0x00007f7280b81348} 'doSth' '()I' in 'pl/jgardo/field/bool/StateHolderNonFinal')}
+  0x00007f7283b92145: mov     %r10,0x8(%rsp)
+  0x00007f7283b9214a: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f7283b92152: callq   0x7f72835de600    ; ImmutableOopMap{rax=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@-1 (line 15)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f7283b92157: jmpq    0x7f7283b9207b
+  0x00007f7283b9215c: nop
+  0x00007f7283b9215d: nop
+  0x00007f7283b9215e: mov     0x420(%r15),%rax
+  0x00007f7283b92165: movabs  $0x0,%r10
+  0x00007f7283b9216f: mov     %r10,0x420(%r15)
+  0x00007f7283b92176: movabs  $0x0,%r10
+  0x00007f7283b92180: mov     %r10,0x428(%r15)
+  0x00007f7283b92187: add     $0x30,%rsp
+  0x00007f7283b9218b: pop     %rbp
+  0x00007f7283b9218c: jmpq    0x7f728354c100    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007f7283b92191: hlt
+  0x00007f7283b92192: hlt
+  0x00007f7283b92193: hlt
+  0x00007f7283b92194: hlt
+  0x00007f7283b92195: hlt
+  0x00007f7283b92196: hlt
+  0x00007f7283b92197: hlt
+  0x00007f7283b92198: hlt
+  0x00007f7283b92199: hlt
+  0x00007f7283b9219a: hlt
+  0x00007f7283b9219b: hlt
+  0x00007f7283b9219c: hlt
+  0x00007f7283b9219d: hlt
+  0x00007f7283b9219e: hlt
+  0x00007f7283b9219f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f7283b921a0: callq   0x7f72835db500    ;   {no_reloc}
+  0x00007f7283b921a5: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f7283b921aa: sub     $0x80,%rsp
+  0x00007f7283b921b1: mov     %rax,0x78(%rsp)
+  0x00007f7283b921b6: mov     %rcx,0x70(%rsp)
+  0x00007f7283b921bb: mov     %rdx,0x68(%rsp)
+  0x00007f7283b921c0: mov     %rbx,0x60(%rsp)
+  0x00007f7283b921c5: mov     %rbp,0x50(%rsp)
+  0x00007f7283b921ca: mov     %rsi,0x48(%rsp)
+  0x00007f7283b921cf: mov     %rdi,0x40(%rsp)
+  0x00007f7283b921d4: mov     %r8,0x38(%rsp)
+  0x00007f7283b921d9: mov     %r9,0x30(%rsp)
+  0x00007f7283b921de: mov     %r10,0x28(%rsp)
+  0x00007f7283b921e3: mov     %r11,0x20(%rsp)
+  0x00007f7283b921e8: mov     %r12,0x18(%rsp)
+  0x00007f7283b921ed: mov     %r13,0x10(%rsp)
+  0x00007f7283b921f2: mov     %r14,0x8(%rsp)
+  0x00007f7283b921f7: mov     %r15,(%rsp)
+  0x00007f7283b921fb: movabs  $0x7f72a1828022,%rdi  ;   {external_word}
+  0x00007f7283b92205: movabs  $0x7f7283b921a5,%rsi  ;   {internal_word}
+  0x00007f7283b9220f: mov     %rsp,%rdx
+  0x00007f7283b92212: and     $0xfffffffffffffff0,%rsp
+  0x00007f7283b92216: callq   0x7f72a1434a80    ;   {runtime_call}
+  0x00007f7283b9221b: hlt
+[Deopt Handler Code]
+  0x00007f7283b9221c: movabs  $0x7f7283b9221c,%r10  ;   {section_word}
+  0x00007f7283b92226: push    %r10
+  0x00007f7283b92228: jmpq    0x7f72835145a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f7283b9222d: hlt
+  0x00007f7283b9222e: hlt
+  0x00007f7283b9222f: hlt
+
+ImmutableOopMap{rsi=Oop }pc offsets: 369
+ImmutableOopMap{rax=Oop }pc offsets: 379 407 Compiled method (c2)     464  644       4       pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField (8 bytes)
+ total in heap  [0x00007f728afef190,0x00007f728afef4e8] = 856
+ relocation     [0x00007f728afef308,0x00007f728afef318] = 16
+ main code      [0x00007f728afef320,0x00007f728afef3c0] = 160
+ stub code      [0x00007f728afef3c0,0x00007f728afef3d8] = 24
+ oops           [0x00007f728afef3d8,0x00007f728afef3e0] = 8
+ metadata       [0x00007f728afef3e0,0x00007f728afef3f0] = 16
+ scopes data    [0x00007f728afef3f0,0x00007f728afef430] = 64
+ scopes pcs     [0x00007f728afef430,0x00007f728afef4d0] = 160
+ dependencies   [0x00007f728afef4d0,0x00007f728afef4d8] = 8
+ nul chk table  [0x00007f728afef4d8,0x00007f728afef4e8] = 16
+----------------------------------------------------------------------
+pl/jgardo/field/bool/BooleanFieldBenchmark.nonFinalField()I  [0x00007f728afef320, 0x00007f728afef3d8]  184 bytes
+Argument 0 is unknown.RIP: 0x7f728afef320 Code size: 0x000000b8
+[Entry Point]
+[Constants]
+  # {method} {0x00007f7280b49ee0} 'nonFinalField' '()I' in 'pl/jgardo/field/bool/BooleanFieldBenchmark'
+  #           [sp+0x30]  (sp of caller)
+  0x00007f728afef320: mov     0x8(%rsi),%r10d
+  0x00007f728afef324: shl     $0x3,%r10
+  0x00007f728afef328: movabs  $0x800000000,%r12
+  0x00007f728afef332: add     %r12,%r10
+  0x00007f728afef335: xor     %r12,%r12
+  0x00007f728afef338: cmp     %r10,%rax
+  0x00007f728afef33b: jne     0x7f7283512d00    ;   {runtime_call ic_miss_stub}
+  0x00007f728afef341: nop
+  0x00007f728afef344: nopl    0x0(%rax,%rax)
+  0x00007f728afef34c: nop
+[Verified Entry Point]
+  0x00007f728afef350: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f728afef357: push    %rbp
+  0x00007f728afef358: sub     $0x20,%rsp        ;*synchronization entry
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@-1 (line 61)
+
+  0x00007f728afef35c: mov     0xc(%rsi),%r10d   ;*getfield stateHolderNonFinal {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@1 (line 61)
+
+  0x00007f728afef360: movzbl  0xc(%r12,%r10,8),%r8d  ;*getfield featureOn {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@3 (line 16)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+                                                ; implicit exception: dispatches to 0x00007f728afef396
+  0x00007f728afef366: test    %r8d,%r8d
+  0x00007f728afef369: je      0x7f728afef380    ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@6 (line 16)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+
+  0x00007f728afef36b: mov     $0x2,%eax
+  0x00007f728afef370: add     $0x20,%rsp
+  0x00007f728afef374: pop     %rbp
+  0x00007f728afef375: mov     0x108(%r15),%r10
+  0x00007f728afef37c: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f728afef37f: retq
+  0x00007f728afef380: mov     $0xffffff4d,%esi
+  0x00007f728afef385: mov     %r10d,%ebp
+  0x00007f728afef388: mov     %r8d,(%rsp)
+  0x00007f728afef38c: nop
+  0x00007f728afef38f: callq   0x7f7283514980    ; ImmutableOopMap{rbp=NarrowOop }
+                                                ;*ifeq {reexecute=1 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@6 (line 16)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f728afef394: ud2                       ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.StateHolderNonFinal::doSth@6 (line 16)
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+
+  0x00007f728afef396: mov     $0xfffffff6,%esi
+  0x00007f728afef39b: callq   0x7f7283514980    ; ImmutableOopMap{}
+                                                ;*invokevirtual doSth {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f728afef3a0: ud2                       ;*invokevirtual doSth {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.bool.BooleanFieldBenchmark::nonFinalField@4 (line 61)
+
+  0x00007f728afef3a2: hlt
+  0x00007f728afef3a3: hlt
+  0x00007f728afef3a4: hlt
+  0x00007f728afef3a5: hlt
+  0x00007f728afef3a6: hlt
+  0x00007f728afef3a7: hlt
+  0x00007f728afef3a8: hlt
+  0x00007f728afef3a9: hlt
+  0x00007f728afef3aa: hlt
+  0x00007f728afef3ab: hlt
+  0x00007f728afef3ac: hlt
+  0x00007f728afef3ad: hlt
+  0x00007f728afef3ae: hlt
+  0x00007f728afef3af: hlt
+  0x00007f728afef3b0: hlt
+  0x00007f728afef3b1: hlt
+  0x00007f728afef3b2: hlt
+  0x00007f728afef3b3: hlt
+  0x00007f728afef3b4: hlt
+  0x00007f728afef3b5: hlt
+  0x00007f728afef3b6: hlt
+  0x00007f728afef3b7: hlt
+  0x00007f728afef3b8: hlt
+  0x00007f728afef3b9: hlt
+  0x00007f728afef3ba: hlt
+  0x00007f728afef3bb: hlt
+  0x00007f728afef3bc: hlt
+  0x00007f728afef3bd: hlt
+  0x00007f728afef3be: hlt
+  0x00007f728afef3bf: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f728afef3c0: jmpq    0x7f72835d9200    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f728afef3c5: callq   0x7f728afef3ca
+  0x00007f728afef3ca: subq    $0x5,(%rsp)
+  0x00007f728afef3cf: jmpq    0x7f72835145a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f728afef3d4: hlt
+  0x00007f728afef3d5: hlt
+  0x00007f728afef3d6: hlt
+  0x00007f728afef3d7: hlt
+
+ImmutableOopMap{rbp=NarrowOop }pc offsets: 116
+ImmutableOopMap{}pc offsets: 128

@@ -1,0 +1,184 @@
+Compiled method (c1)     873  629       2       pl.jgardo.variables.VariableBenchmark::countHashWithFinals (24 bytes)
+ total in heap  [0x00007f21a52ece10,0x00007f21a52ed180] = 880
+ relocation     [0x00007f21a52ecf88,0x00007f21a52ecfb0] = 40
+ main code      [0x00007f21a52ecfc0,0x00007f21a52ed080] = 192
+ stub code      [0x00007f21a52ed080,0x00007f21a52ed110] = 144
+ oops           [0x00007f21a52ed110,0x00007f21a52ed118] = 8
+ metadata       [0x00007f21a52ed118,0x00007f21a52ed120] = 8
+ scopes data    [0x00007f21a52ed120,0x00007f21a52ed138] = 24
+ scopes pcs     [0x00007f21a52ed138,0x00007f21a52ed178] = 64
+ dependencies   [0x00007f21a52ed178,0x00007f21a52ed180] = 8
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.countHashWithFinals()I  [0x00007f21a52ecfc0, 0x00007f21a52ed110]  336 bytes
+Argument 0 is unknown.RIP: 0x7f21a52ecfc0 Code size: 0x00000150
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2191ff9b80} 'countHashWithFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0x60]  (sp of caller)
+  0x00007f21a52ecfc0: mov     0x8(%rsi),%r10d
+  0x00007f21a52ecfc4: movabs  $0x800000000,%r12
+  0x00007f21a52ecfce: add     %r12,%r10
+  0x00007f21a52ecfd1: xor     %r12,%r12
+  0x00007f21a52ecfd4: cmp     %rax,%r10
+  0x00007f21a52ecfd7: jne     0x7f21a4c68c00    ;   {runtime_call ic_miss_stub}
+  0x00007f21a52ecfdd: nop
+[Verified Entry Point]
+  0x00007f21a52ecfe0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f21a52ecfe7: push    %rbp
+  0x00007f21a52ecfe8: sub     $0x50,%rsp
+  0x00007f21a52ecfec: movabs  $0x7f21578b1580,%rax
+  0x00007f21a52ecff6: mov     0x18(%rax),%edi
+  0x00007f21a52ecff9: add     $0x8,%edi
+  0x00007f21a52ecffc: mov     %edi,0x18(%rax)
+  0x00007f21a52ecfff: and     $0x3ff8,%edi
+  0x00007f21a52ed005: cmp     $0x0,%edi
+  0x00007f21a52ed008: je      0x7f21a52ed023    ;*aload_0 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithFinals@0 (line 45)
+
+  0x00007f21a52ed00e: mov     $0x1a4,%eax
+  0x00007f21a52ed013: add     $0x50,%rsp
+  0x00007f21a52ed017: pop     %rbp
+  0x00007f21a52ed018: mov     0x108(%r15),%r10
+  0x00007f21a52ed01f: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f21a52ed022: retq
+  0x00007f21a52ed023: movabs  $0x7f2191ff9b80,%r10  ;   {metadata({method} {0x00007f2191ff9b80} 'countHashWithFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f21a52ed02d: mov     %r10,0x8(%rsp)
+  0x00007f21a52ed032: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f21a52ed03a: callq   0x7f21a4d31180    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithFinals@-1 (line 45)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f21a52ed03f: jmp     0x7f21a52ed00e
+  0x00007f21a52ed041: nop
+  0x00007f21a52ed042: nop
+  0x00007f21a52ed043: mov     0x420(%r15),%rax
+  0x00007f21a52ed04a: movabs  $0x0,%r10
+  0x00007f21a52ed054: mov     %r10,0x420(%r15)
+  0x00007f21a52ed05b: movabs  $0x0,%r10
+  0x00007f21a52ed065: mov     %r10,0x428(%r15)
+  0x00007f21a52ed06c: add     $0x50,%rsp
+  0x00007f21a52ed070: pop     %rbp
+  0x00007f21a52ed071: jmpq    0x7f21a4d2c000    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007f21a52ed076: hlt
+  0x00007f21a52ed077: hlt
+  0x00007f21a52ed078: hlt
+  0x00007f21a52ed079: hlt
+  0x00007f21a52ed07a: hlt
+  0x00007f21a52ed07b: hlt
+  0x00007f21a52ed07c: hlt
+  0x00007f21a52ed07d: hlt
+  0x00007f21a52ed07e: hlt
+  0x00007f21a52ed07f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f21a52ed080: callq   0x7f21a4d2e680    ;   {no_reloc}
+  0x00007f21a52ed085: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f21a52ed08a: sub     $0x80,%rsp
+  0x00007f21a52ed091: mov     %rax,0x78(%rsp)
+  0x00007f21a52ed096: mov     %rcx,0x70(%rsp)
+  0x00007f21a52ed09b: mov     %rdx,0x68(%rsp)
+  0x00007f21a52ed0a0: mov     %rbx,0x60(%rsp)
+  0x00007f21a52ed0a5: mov     %rbp,0x50(%rsp)
+  0x00007f21a52ed0aa: mov     %rsi,0x48(%rsp)
+  0x00007f21a52ed0af: mov     %rdi,0x40(%rsp)
+  0x00007f21a52ed0b4: mov     %r8,0x38(%rsp)
+  0x00007f21a52ed0b9: mov     %r9,0x30(%rsp)
+  0x00007f21a52ed0be: mov     %r10,0x28(%rsp)
+  0x00007f21a52ed0c3: mov     %r11,0x20(%rsp)
+  0x00007f21a52ed0c8: mov     %r12,0x18(%rsp)
+  0x00007f21a52ed0cd: mov     %r13,0x10(%rsp)
+  0x00007f21a52ed0d2: mov     %r14,0x8(%rsp)
+  0x00007f21a52ed0d7: mov     %r15,(%rsp)
+  0x00007f21a52ed0db: movabs  $0x7f21c421ce9e,%rdi  ;   {external_word}
+  0x00007f21a52ed0e5: movabs  $0x7f21a52ed085,%rsi  ;   {internal_word}
+  0x00007f21a52ed0ef: mov     %rsp,%rdx
+  0x00007f21a52ed0f2: and     $0xfffffffffffffff0,%rsp
+  0x00007f21a52ed0f6: callq   0x7f21c3e250f0    ;   {runtime_call MacroAssembler::debug64(char*, long, long*)}
+  0x00007f21a52ed0fb: hlt
+[Deopt Handler Code]
+  0x00007f21a52ed0fc: movabs  $0x7f21a52ed0fc,%r10  ;   {section_word}
+  0x00007f21a52ed106: push    %r10
+  0x00007f21a52ed108: jmpq    0x7f21a4c6a4a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f21a52ed10d: hlt
+  0x00007f21a52ed10e: hlt
+  0x00007f21a52ed10f: hlt
+
+ImmutableOopMap{rsi=Oop }pc offsets: 127 Compiled method (c2)     899  631       4       pl.jgardo.variables.VariableBenchmark::countHashWithFinals (24 bytes)
+ total in heap  [0x00007f21ac740290,0x00007f21ac7404e8] = 600
+ relocation     [0x00007f21ac740408,0x00007f21ac740418] = 16
+ main code      [0x00007f21ac740420,0x00007f21ac740480] = 96
+ stub code      [0x00007f21ac740480,0x00007f21ac740498] = 24
+ oops           [0x00007f21ac740498,0x00007f21ac7404a0] = 8
+ metadata       [0x00007f21ac7404a0,0x00007f21ac7404a8] = 8
+ scopes data    [0x00007f21ac7404a8,0x00007f21ac7404b0] = 8
+ scopes pcs     [0x00007f21ac7404b0,0x00007f21ac7404e0] = 48
+ dependencies   [0x00007f21ac7404e0,0x00007f21ac7404e8] = 8
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.countHashWithFinals()I  [0x00007f21ac740420, 0x00007f21ac740498]  120 bytes
+Argument 0 is unknown.RIP: 0x7f21ac740420 Code size: 0x00000078
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2191ff9b80} 'countHashWithFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007f21ac740420: mov     0x8(%rsi),%r10d
+  0x00007f21ac740424: movabs  $0x800000000,%r12
+  0x00007f21ac74042e: add     %r12,%r10
+  0x00007f21ac740431: xor     %r12,%r12
+  0x00007f21ac740434: cmp     %r10,%rax
+  0x00007f21ac740437: jne     0x7f21a4c68c00    ;   {runtime_call ic_miss_stub}
+  0x00007f21ac74043d: nop
+[Verified Entry Point]
+  0x00007f21ac740440: sub     $0x18,%rsp
+  0x00007f21ac740447: mov     %rbp,0x10(%rsp)   ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithFinals@-1 (line 45)
+
+  0x00007f21ac74044c: mov     $0x1a4,%eax
+  0x00007f21ac740451: add     $0x10,%rsp
+  0x00007f21ac740455: pop     %rbp
+  0x00007f21ac740456: mov     0x108(%r15),%r10
+  0x00007f21ac74045d: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f21ac740460: retq
+  0x00007f21ac740461: hlt
+  0x00007f21ac740462: hlt
+  0x00007f21ac740463: hlt
+  0x00007f21ac740464: hlt
+  0x00007f21ac740465: hlt
+  0x00007f21ac740466: hlt
+  0x00007f21ac740467: hlt
+  0x00007f21ac740468: hlt
+  0x00007f21ac740469: hlt
+  0x00007f21ac74046a: hlt
+  0x00007f21ac74046b: hlt
+  0x00007f21ac74046c: hlt
+  0x00007f21ac74046d: hlt
+  0x00007f21ac74046e: hlt
+  0x00007f21ac74046f: hlt
+  0x00007f21ac740470: hlt
+  0x00007f21ac740471: hlt
+  0x00007f21ac740472: hlt
+  0x00007f21ac740473: hlt
+  0x00007f21ac740474: hlt
+  0x00007f21ac740475: hlt
+  0x00007f21ac740476: hlt
+  0x00007f21ac740477: hlt
+  0x00007f21ac740478: hlt
+  0x00007f21ac740479: hlt
+  0x00007f21ac74047a: hlt
+  0x00007f21ac74047b: hlt
+  0x00007f21ac74047c: hlt
+  0x00007f21ac74047d: hlt
+  0x00007f21ac74047e: hlt
+  0x00007f21ac74047f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f21ac740480: jmpq    0x7f21a4d2c380    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f21ac740485: callq   0x7f21ac74048a
+  0x00007f21ac74048a: subq    $0x5,(%rsp)
+  0x00007f21ac74048f: jmpq    0x7f21a4c6a4a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f21ac740494: hlt
+  0x00007f21ac740495: hlt
+  0x00007f21ac740496: hlt
+  0x00007f21ac740497: hlt

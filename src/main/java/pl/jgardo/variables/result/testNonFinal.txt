@@ -1,0 +1,638 @@
+Compiled method (c1)     496  635       3       pl.jgardo.variables.VariableBenchmark::testNonFinal (25 bytes)
+ total in heap  [0x00007fbea12e4010,0x00007fbea12e4ea8] = 3736
+ relocation     [0x00007fbea12e4188,0x00007fbea12e4258] = 208
+ main code      [0x00007fbea12e4260,0x00007fbea12e4940] = 1760
+ stub code      [0x00007fbea12e4940,0x00007fbea12e4a28] = 232
+ oops           [0x00007fbea12e4a28,0x00007fbea12e4a40] = 24
+ metadata       [0x00007fbea12e4a40,0x00007fbea12e4a80] = 64
+ scopes data    [0x00007fbea12e4a80,0x00007fbea12e4c30] = 432
+ scopes pcs     [0x00007fbea12e4c30,0x00007fbea12e4ea0] = 624
+ dependencies   [0x00007fbea12e4ea0,0x00007fbea12e4ea8] = 8
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.testNonFinal()Ljava/lang/String;  [0x00007fbea12e4260, 0x00007fbea12e4a28]  1992 bytes
+Argument 0 is unknown.RIP: 0x7fbea12e4260 Code size: 0x000007c8
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0xc0]  (sp of caller)
+  0x00007fbea12e4260: mov     0x8(%rsi),%r10d
+  0x00007fbea12e4264: movabs  $0x800000000,%r12
+  0x00007fbea12e426e: add     %r12,%r10
+  0x00007fbea12e4271: xor     %r12,%r12
+  0x00007fbea12e4274: cmp     %rax,%r10
+  0x00007fbea12e4277: jne     0x7fbea0c68c00    ;   {runtime_call ic_miss_stub}
+  0x00007fbea12e427d: nop
+[Verified Entry Point]
+  0x00007fbea12e4280: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fbea12e4287: push    %rbp
+  0x00007fbea12e4288: sub     $0xb0,%rsp
+  0x00007fbea12e428f: movabs  $0x7fbe63181198,%rdx  ;   {metadata(method data for {method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fbea12e4299: mov     0x104(%rdx),%edi
+  0x00007fbea12e429f: add     $0x8,%edi
+  0x00007fbea12e42a2: mov     %edi,0x104(%rdx)
+  0x00007fbea12e42a8: and     $0x1ff8,%edi
+  0x00007fbea12e42ae: cmp     $0x0,%edi
+  0x00007fbea12e42b1: je      0x7fbea12e4787    ;*ldc {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@0 (line 37)
+
+  0x00007fbea12e42b7: movabs  $0x80000ece8,%rdx  ;   {metadata('java/lang/StringBuilder')}
+  0x00007fbea12e42c1: mov     0x118(%r15),%rax
+  0x00007fbea12e42c8: lea     0x18(%rax),%rdi
+  0x00007fbea12e42cc: cmp     0x128(%r15),%rdi
+  0x00007fbea12e42d3: jnbe    0x7fbea12e47a8
+  0x00007fbea12e42d9: mov     %rdi,0x118(%r15)
+  0x00007fbea12e42e0: mov     0xb8(%rdx),%rcx
+  0x00007fbea12e42e7: mov     %rcx,(%rax)
+  0x00007fbea12e42ea: mov     %rdx,%rcx
+  0x00007fbea12e42ed: movabs  $0x800000000,%r12
+  0x00007fbea12e42f7: sub     %r12,%rcx
+  0x00007fbea12e42fa: xor     %r12,%r12
+  0x00007fbea12e42fd: mov     %ecx,0x8(%rax)
+  0x00007fbea12e4300: xor     %rcx,%rcx
+  0x00007fbea12e4303: mov     %ecx,0xc(%rax)
+  0x00007fbea12e4306: xor     %rcx,%rcx
+  0x00007fbea12e4309: mov     %rcx,0x10(%rax)   ;*new {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@6 (line 39)
+
+  0x00007fbea12e430d: mov     %rax,%rdx
+  0x00007fbea12e4310: movabs  $0x7fbe63181198,%rsi  ;   {metadata(method data for {method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fbea12e431a: addq    $0x1,0x140(%rsi)
+  0x00007fbea12e4322: movabs  $0x7fbe917a0ec8,%rdx  ;   {metadata(method data for {method} {0x00007fbe91471180} '<init>' '()V' in 'java/lang/StringBuilder')}
+  0x00007fbea12e432c: mov     0x104(%rdx),%esi
+  0x00007fbea12e4332: add     $0x8,%esi
+  0x00007fbea12e4335: mov     %esi,0x104(%rdx)
+  0x00007fbea12e433b: and     $0x7ffff8,%esi
+  0x00007fbea12e4341: cmp     $0x0,%esi
+  0x00007fbea12e4344: je      0x7fbea12e47b5
+  0x00007fbea12e434a: mov     %rax,%rdx
+  0x00007fbea12e434d: movabs  $0x7fbe917a0ec8,%rsi  ;   {metadata(method data for {method} {0x00007fbe91471180} '<init>' '()V' in 'java/lang/StringBuilder')}
+  0x00007fbea12e4357: addq    $0x1,0x140(%rsi)
+  0x00007fbea12e435f: mov     $0x10,%edx
+  0x00007fbea12e4364: mov     %rax,%rsi         ;*invokespecial <init> {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::<init>@3 (line 99)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@10 (line 39)
+
+  0x00007fbea12e4367: mov     %rax,0x90(%rsp)
+  0x00007fbea12e436f: callq   0x7fbea121c280    ; ImmutableOopMap{[144]=Oop }
+                                                ;*invokespecial <init> {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::<init>@3 (line 99)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@10 (line 39)
+                                                ;   {optimized virtual_call}
+  0x00007fbea12e4374: mov     0x90(%rsp),%rax
+  0x00007fbea12e437c: movabs  $0x7fbe63181198,%rdx  ;   {metadata(method data for {method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fbea12e4386: addq    $0x1,0x150(%rdx)
+  0x00007fbea12e438e: movabs  $0x7fbe917a15f8,%rdx  ;   {metadata(method data for {method} {0x00007fbe91471650} 'append' '(Ljava/lang/String;)Ljava/lang/StringBuilder;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e4398: mov     0x104(%rdx),%esi
+  0x00007fbea12e439e: add     $0x8,%esi
+  0x00007fbea12e43a1: mov     %esi,0x104(%rdx)
+  0x00007fbea12e43a7: and     $0x7ffff8,%esi
+  0x00007fbea12e43ad: cmp     $0x0,%esi
+  0x00007fbea12e43b0: je      0x7fbea12e47d6
+  0x00007fbea12e43b6: mov     0x90(%rsp),%rax
+  0x00007fbea12e43be: movabs  $0x7fbe917a15f8,%rdx  ;   {metadata(method data for {method} {0x00007fbe91471650} 'append' '(Ljava/lang/String;)Ljava/lang/StringBuilder;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e43c8: addq    $0x1,0x140(%rdx)
+  0x00007fbea12e43d0: movabs  $0x7162b8730,%rdx  ;   {oop("a"{0x00000007162b8730})}
+  0x00007fbea12e43da: mov     0x90(%rsp),%rsi   ;*invokespecial append {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::append@2 (line 174)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@14 (line 39)
+
+  0x00007fbea12e43e2: nopl    0x0(%rax,%rax)
+  0x00007fbea12e43e7: callq   0x7fbea873fae0    ; ImmutableOopMap{[144]=Oop }
+                                                ;*invokespecial append {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::append@2 (line 174)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@14 (line 39)
+                                                ;   {optimized virtual_call}
+  0x00007fbea12e43ec: mov     0x90(%rsp),%rax
+  0x00007fbea12e43f4: movabs  $0x7fbe63181198,%rdx  ;   {metadata(method data for {method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fbea12e43fe: addq    $0x1,0x188(%rdx)
+  0x00007fbea12e4406: movabs  $0x7fbe917a15f8,%rdx  ;   {metadata(method data for {method} {0x00007fbe91471650} 'append' '(Ljava/lang/String;)Ljava/lang/StringBuilder;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e4410: mov     0x104(%rdx),%esi
+  0x00007fbea12e4416: add     $0x8,%esi
+  0x00007fbea12e4419: mov     %esi,0x104(%rdx)
+  0x00007fbea12e441f: and     $0x7ffff8,%esi
+  0x00007fbea12e4425: cmp     $0x0,%esi
+  0x00007fbea12e4428: je      0x7fbea12e47f7
+  0x00007fbea12e442e: mov     0x90(%rsp),%rax
+  0x00007fbea12e4436: movabs  $0x7fbe917a15f8,%rdx  ;   {metadata(method data for {method} {0x00007fbe91471650} 'append' '(Ljava/lang/String;)Ljava/lang/StringBuilder;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e4440: addq    $0x1,0x140(%rdx)
+  0x00007fbea12e4448: movabs  $0x7162b8760,%rdx  ;   {oop("b"{0x00000007162b8760})}
+  0x00007fbea12e4452: mov     0x90(%rsp),%rsi   ;*invokespecial append {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::append@2 (line 174)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@18 (line 39)
+
+  0x00007fbea12e445a: nopl    0x0(%rax,%rax)
+  0x00007fbea12e445f: callq   0x7fbea873fae0    ; ImmutableOopMap{[144]=Oop }
+                                                ;*invokespecial append {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::append@2 (line 174)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@18 (line 39)
+                                                ;   {optimized virtual_call}
+  0x00007fbea12e4464: mov     0x90(%rsp),%rax
+  0x00007fbea12e446c: movabs  $0x7fbe63181198,%rdx  ;   {metadata(method data for {method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fbea12e4476: addq    $0x1,0x1c0(%rdx)
+  0x00007fbea12e447e: movabs  $0x7fbe917a1a00,%rdx  ;   {metadata(method data for {method} {0x00007fbe91472ff8} 'toString' '()Ljava/lang/String;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e4488: mov     0x104(%rdx),%esi
+  0x00007fbea12e448e: add     $0x8,%esi
+  0x00007fbea12e4491: mov     %esi,0x104(%rdx)
+  0x00007fbea12e4497: and     $0x7ffff8,%esi
+  0x00007fbea12e449d: cmp     $0x0,%esi
+  0x00007fbea12e44a0: je      0x7fbea12e4818
+  0x00007fbea12e44a6: mov     0x90(%rsp),%rax
+  0x00007fbea12e44ae: movabs  $0x7fbe917a1a00,%rdx  ;   {metadata(method data for {method} {0x00007fbe91472ff8} 'toString' '()Ljava/lang/String;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e44b8: addq    $0x1,0x140(%rdx)
+  0x00007fbea12e44c0: movabs  $0x7fbe917a1c10,%rdx  ;   {metadata(method data for {method} {0x00007fbe9146f080} 'isLatin1' '()Z' in 'java/lang/AbstractStringBuilder')}
+  0x00007fbea12e44ca: mov     0x104(%rdx),%esi
+  0x00007fbea12e44d0: add     $0x8,%esi
+  0x00007fbea12e44d3: mov     %esi,0x104(%rdx)
+  0x00007fbea12e44d9: and     $0x7ffff8,%esi
+  0x00007fbea12e44df: cmp     $0x0,%esi
+  0x00007fbea12e44e2: je      0x7fbea12e4839
+  0x00007fbea12e44e8: movabs  $0x7fbe917a1c10,%rdx  ;   {metadata(method data for {method} {0x00007fbe9146f080} 'isLatin1' '()Z' in 'java/lang/AbstractStringBuilder')}
+  0x00007fbea12e44f2: incl    0x150(%rdx)       ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.AbstractStringBuilder::isLatin1@3 (line 1624)
+                                                ; - java.lang.StringBuilder::toString@1 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e44f8: mov     0x90(%rsp),%rax
+  0x00007fbea12e4500: movsbl  0x10(%rax),%edx   ;*getfield coder {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.AbstractStringBuilder::isLatin1@7 (line 1624)
+                                                ; - java.lang.StringBuilder::toString@1 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4504: cmp     $0x0,%edx
+  0x00007fbea12e4507: movabs  $0x7fbe917a1c10,%rdx  ;   {metadata(method data for {method} {0x00007fbe9146f080} 'isLatin1' '()Z' in 'java/lang/AbstractStringBuilder')}
+  0x00007fbea12e4511: movabs  $0x160,%rsi
+  0x00007fbea12e451b: jne     0x7fbea12e452b
+  0x00007fbea12e4521: movabs  $0x170,%rsi
+  0x00007fbea12e452b: mov     (%rdx,%rsi),%rdi
+  0x00007fbea12e452f: lea     0x1(%rdi),%rdi
+  0x00007fbea12e4533: mov     %rdi,(%rdx,%rsi)
+  0x00007fbea12e4537: jne     0x7fbea12e4557    ;*ifne {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.AbstractStringBuilder::isLatin1@10 (line 1624)
+                                                ; - java.lang.StringBuilder::toString@1 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e453d: movabs  $0x7fbe917a1c10,%rdx  ;   {metadata(method data for {method} {0x00007fbe9146f080} 'isLatin1' '()Z' in 'java/lang/AbstractStringBuilder')}
+  0x00007fbea12e4547: incl    0x180(%rdx)
+  0x00007fbea12e454d: mov     $0x1,%edx
+  0x00007fbea12e4552: jmpq    0x7fbea12e455c    ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.AbstractStringBuilder::isLatin1@14 (line 1624)
+                                                ; - java.lang.StringBuilder::toString@1 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4557: mov     $0x0,%edx         ;*ireturn {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.AbstractStringBuilder::isLatin1@18 (line 1624)
+                                                ; - java.lang.StringBuilder::toString@1 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e455c: and     $0x1,%edx
+  0x00007fbea12e455f: cmp     $0x0,%edx
+  0x00007fbea12e4562: movabs  $0x7fbe917a1a00,%rdx  ;   {metadata(method data for {method} {0x00007fbe91472ff8} 'toString' '()Ljava/lang/String;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e456c: movabs  $0x178,%rsi
+  0x00007fbea12e4576: je      0x7fbea12e4586
+  0x00007fbea12e457c: movabs  $0x188,%rsi
+  0x00007fbea12e4586: mov     (%rdx,%rsi),%rdi
+  0x00007fbea12e458a: lea     0x1(%rdi),%rdi
+  0x00007fbea12e458e: mov     %rdi,(%rdx,%rsi)
+  0x00007fbea12e4592: je      0x7fbea12e4747    ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@4 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4598: mov     0x14(%rax),%ebx
+  0x00007fbea12e459b: shl     $0x3,%rbx         ;*getfield value {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@8 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e459f: mov     0xc(%rax),%r8d    ;*getfield count {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@13 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e45a3: movabs  $0x7fbe917a1a00,%rdx  ;   {metadata(method data for {method} {0x00007fbe91472ff8} 'toString' '()Ljava/lang/String;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e45ad: addq    $0x1,0x198(%rdx)
+  0x00007fbea12e45b5: movabs  $0x7fbe917a09a8,%rdx  ;   {metadata(method data for {method} {0x00007fbe915238e0} 'newString' '([BII)Ljava/lang/String;' in 'java/lang/StringLatin1')}
+  0x00007fbea12e45bf: mov     0x104(%rdx),%esi
+  0x00007fbea12e45c5: add     $0x8,%esi
+  0x00007fbea12e45c8: mov     %esi,0x104(%rdx)
+  0x00007fbea12e45ce: and     $0x7ffff8,%esi
+  0x00007fbea12e45d4: cmp     $0x0,%esi
+  0x00007fbea12e45d7: je      0x7fbea12e485a
+  0x00007fbea12e45dd: movabs  $0x800001808,%rdx  ;   {metadata('java/lang/String')}
+  0x00007fbea12e45e7: mov     0x118(%r15),%rax
+  0x00007fbea12e45ee: lea     0x18(%rax),%rdi
+  0x00007fbea12e45f2: cmp     0x128(%r15),%rdi
+  0x00007fbea12e45f9: jnbe    0x7fbea12e487b
+  0x00007fbea12e45ff: mov     %rdi,0x118(%r15)
+  0x00007fbea12e4606: mov     0xb8(%rdx),%rcx
+  0x00007fbea12e460d: mov     %rcx,(%rax)
+  0x00007fbea12e4610: mov     %rdx,%rcx
+  0x00007fbea12e4613: movabs  $0x800000000,%r12
+  0x00007fbea12e461d: sub     %r12,%rcx
+  0x00007fbea12e4620: xor     %r12,%r12
+  0x00007fbea12e4623: mov     %ecx,0x8(%rax)
+  0x00007fbea12e4626: xor     %rcx,%rcx
+  0x00007fbea12e4629: mov     %ecx,0xc(%rax)
+  0x00007fbea12e462c: xor     %rcx,%rcx
+  0x00007fbea12e462f: mov     %rcx,0x10(%rax)   ;*new {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringLatin1::newString@0 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4633: movabs  $0x7fbe917a09a8,%rsi  ;   {metadata(method data for {method} {0x00007fbe915238e0} 'newString' '([BII)Ljava/lang/String;' in 'java/lang/StringLatin1')}
+  0x00007fbea12e463d: addq    $0x1,0x140(%rsi)
+  0x00007fbea12e4645: mov     %rbx,%rsi
+  0x00007fbea12e4648: mov     $0x0,%edx
+  0x00007fbea12e464d: mov     %r8,%rcx          ;*invokestatic copyOfRange {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringLatin1::newString@9 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4650: mov     %rax,0x98(%rsp)
+  0x00007fbea12e4658: nopl    0x0(%rax)
+  0x00007fbea12e465f: callq   0x7fbea87424a0    ; ImmutableOopMap{[152]=Oop }
+                                                ;*invokestatic copyOfRange {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringLatin1::newString@9 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {static_call}
+  0x00007fbea12e4664: mov     0x98(%rsp),%rsi
+  0x00007fbea12e466c: movabs  $0x7fbe917a09a8,%rdx  ;   {metadata(method data for {method} {0x00007fbe915238e0} 'newString' '([BII)Ljava/lang/String;' in 'java/lang/StringLatin1')}
+  0x00007fbea12e4676: addq    $0x1,0x150(%rdx)
+  0x00007fbea12e467e: movabs  $0x7fbe9175abc0,%rsi  ;   {metadata(method data for {method} {0x00007fbe913d30d8} '<init>' '([BB)V' in 'java/lang/String')}
+  0x00007fbea12e4688: mov     0x104(%rsi),%edx
+  0x00007fbea12e468e: add     $0x8,%edx
+  0x00007fbea12e4691: mov     %edx,0x104(%rsi)
+  0x00007fbea12e4697: and     $0x7ffff8,%edx
+  0x00007fbea12e469d: cmp     $0x0,%edx
+  0x00007fbea12e46a0: je      0x7fbea12e4888
+  0x00007fbea12e46a6: mov     0x98(%rsp),%rsi
+  0x00007fbea12e46ae: movabs  $0x7fbe9175abc0,%rdx  ;   {metadata(method data for {method} {0x00007fbe913d30d8} '<init>' '([BB)V' in 'java/lang/String')}
+  0x00007fbea12e46b8: addq    $0x1,0x140(%rdx)
+  0x00007fbea12e46c0: movabs  $0x7fbe915fed58,%rsi  ;   {metadata(method data for {method} {0x00007fbe913c9610} '<init>' '()V' in 'java/lang/Object')}
+  0x00007fbea12e46ca: mov     0x104(%rsi),%edx
+  0x00007fbea12e46d0: add     $0x8,%edx
+  0x00007fbea12e46d3: mov     %edx,0x104(%rsi)
+  0x00007fbea12e46d9: and     $0x7ffff8,%edx
+  0x00007fbea12e46df: cmp     $0x0,%edx
+  0x00007fbea12e46e2: je      0x7fbea12e48a9
+  0x00007fbea12e46e8: movsbl  0x30(%r15),%esi
+  0x00007fbea12e46ed: cmp     $0x0,%esi
+  0x00007fbea12e46f0: mov     0x98(%rsp),%rsi
+  0x00007fbea12e46f8: jne     0x7fbea12e48ca
+  0x00007fbea12e46fe: mov     %rax,%r10
+  0x00007fbea12e4701: shr     $0x3,%r10
+  0x00007fbea12e4705: mov     %r10d,0xc(%rsi)
+  0x00007fbea12e4709: mov     %rsi,%rdx
+  0x00007fbea12e470c: xor     %rax,%rdx
+  0x00007fbea12e470f: shr     $0x14,%rdx
+  0x00007fbea12e4713: cmp     $0x0,%rdx
+  0x00007fbea12e4717: jne     0x7fbea12e48e9    ;*putfield value {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.String::<init>@6 (line 3253)
+                                                ; - java.lang.StringLatin1::newString@13 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e471d: movb    $0x0,0x14(%rsi)   ;*putfield coder {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.String::<init>@11 (line 3254)
+                                                ; - java.lang.StringLatin1::newString@13 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4721: movabs  $0x7fbe917a1a00,%rdx  ;   {metadata(method data for {method} {0x00007fbe91472ff8} 'toString' '()Ljava/lang/String;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e472b: incl    0x1a8(%rdx)
+  0x00007fbea12e4731: mov     %rsi,%rax         ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@19 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4734: add     $0xb0,%rsp
+  0x00007fbea12e473b: pop     %rbp
+  0x00007fbea12e473c: mov     0x108(%r15),%r10
+  0x00007fbea12e4743: test    %eax,(%r10)       ;   {poll_return}
+  0x00007fbea12e4746: retq
+  0x00007fbea12e4747: mov     0x14(%rax),%esi
+  0x00007fbea12e474a: shl     $0x3,%rsi         ;*getfield value {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@23 (line 449)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e474e: mov     0xc(%rax),%ecx    ;*getfield count {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@28 (line 449)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4751: movabs  $0x7fbe917a1a00,%rdx  ;   {metadata(method data for {method} {0x00007fbe91472ff8} 'toString' '()Ljava/lang/String;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e475b: addq    $0x1,0x1c0(%rdx)
+  0x00007fbea12e4763: mov     $0x0,%edx         ;*invokestatic newString {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@31 (line 449)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+
+  0x00007fbea12e4768: nopl    0x0(%rax)
+  0x00007fbea12e476f: callq   0x7fbea0c69380    ; ImmutableOopMap{}
+                                                ;*invokestatic newString {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringBuilder::toString@31 (line 449)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {static_call}
+  0x00007fbea12e4774: add     $0xb0,%rsp
+  0x00007fbea12e477b: pop     %rbp
+  0x00007fbea12e477c: mov     0x108(%r15),%r10
+  0x00007fbea12e4783: test    %eax,(%r10)       ;   {poll_return}
+  0x00007fbea12e4786: retq
+  0x00007fbea12e4787: movabs  $0x7fbe91ba9a78,%r10  ;   {metadata({method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fbea12e4791: mov     %r10,0x8(%rsp)
+  0x00007fbea12e4796: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e479e: callq   0x7fbea0d31580    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@-1 (line 37)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e47a3: jmpq    0x7fbea12e42b7
+  0x00007fbea12e47a8: mov     %rdx,%rdx
+  0x00007fbea12e47ab: callq   0x7fbea0d2d500    ; ImmutableOopMap{}
+                                                ;*new {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@6 (line 39)
+                                                ;   {runtime_call fast_new_instance Runtime1 stub}
+  0x00007fbea12e47b0: jmpq    0x7fbea12e430d
+  0x00007fbea12e47b5: movabs  $0x7fbe91471180,%r10  ;   {metadata({method} {0x00007fbe91471180} '<init>' '()V' in 'java/lang/StringBuilder')}
+  0x00007fbea12e47bf: mov     %r10,0x8(%rsp)
+  0x00007fbea12e47c4: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e47cc: callq   0x7fbea0d31580    ; ImmutableOopMap{rax=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.StringBuilder::<init>@-1 (line 99)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@10 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e47d1: jmpq    0x7fbea12e434a
+  0x00007fbea12e47d6: movabs  $0x7fbe91471650,%r10  ;   {metadata({method} {0x00007fbe91471650} 'append' '(Ljava/lang/String;)Ljava/lang/StringBuilder;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e47e0: mov     %r10,0x8(%rsp)
+  0x00007fbea12e47e5: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e47ed: callq   0x7fbea0d31580    ; ImmutableOopMap{[144]=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.StringBuilder::append@-1 (line 174)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@14 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e47f2: jmpq    0x7fbea12e43b6
+  0x00007fbea12e47f7: movabs  $0x7fbe91471650,%r10  ;   {metadata({method} {0x00007fbe91471650} 'append' '(Ljava/lang/String;)Ljava/lang/StringBuilder;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e4801: mov     %r10,0x8(%rsp)
+  0x00007fbea12e4806: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e480e: callq   0x7fbea0d31580    ; ImmutableOopMap{[144]=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.StringBuilder::append@-1 (line 174)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@18 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e4813: jmpq    0x7fbea12e442e
+  0x00007fbea12e4818: movabs  $0x7fbe91472ff8,%r10  ;   {metadata({method} {0x00007fbe91472ff8} 'toString' '()Ljava/lang/String;' in 'java/lang/StringBuilder')}
+  0x00007fbea12e4822: mov     %r10,0x8(%rsp)
+  0x00007fbea12e4827: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e482f: callq   0x7fbea0d31580    ; ImmutableOopMap{[144]=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.StringBuilder::toString@-1 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e4834: jmpq    0x7fbea12e44a6
+  0x00007fbea12e4839: movabs  $0x7fbe9146f080,%r10  ;   {metadata({method} {0x00007fbe9146f080} 'isLatin1' '()Z' in 'java/lang/AbstractStringBuilder')}
+  0x00007fbea12e4843: mov     %r10,0x8(%rsp)
+  0x00007fbea12e4848: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e4850: callq   0x7fbea0d31580    ; ImmutableOopMap{[144]=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.AbstractStringBuilder::isLatin1@-1 (line 1624)
+                                                ; - java.lang.StringBuilder::toString@1 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e4855: jmpq    0x7fbea12e44e8
+  0x00007fbea12e485a: movabs  $0x7fbe915238e0,%r10  ;   {metadata({method} {0x00007fbe915238e0} 'newString' '([BII)Ljava/lang/String;' in 'java/lang/StringLatin1')}
+  0x00007fbea12e4864: mov     %r10,0x8(%rsp)
+  0x00007fbea12e4869: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e4871: callq   0x7fbea0d31580    ; ImmutableOopMap{rbx=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.StringLatin1::newString@-1 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e4876: jmpq    0x7fbea12e45dd
+  0x00007fbea12e487b: mov     %rdx,%rdx
+  0x00007fbea12e487e: callq   0x7fbea0d2d500    ; ImmutableOopMap{rbx=Oop }
+                                                ;*new {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.StringLatin1::newString@0 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {runtime_call fast_new_instance Runtime1 stub}
+  0x00007fbea12e4883: jmpq    0x7fbea12e4633
+  0x00007fbea12e4888: movabs  $0x7fbe913d30d8,%r10  ;   {metadata({method} {0x00007fbe913d30d8} '<init>' '([BB)V' in 'java/lang/String')}
+  0x00007fbea12e4892: mov     %r10,0x8(%rsp)
+  0x00007fbea12e4897: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e489f: callq   0x7fbea0d31580    ; ImmutableOopMap{[152]=Oop rax=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.String::<init>@-1 (line 3252)
+                                                ; - java.lang.StringLatin1::newString@13 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e48a4: jmpq    0x7fbea12e46a6
+  0x00007fbea12e48a9: movabs  $0x7fbe913c9610,%r10  ;   {metadata({method} {0x00007fbe913c9610} '<init>' '()V' in 'java/lang/Object')}
+  0x00007fbea12e48b3: mov     %r10,0x8(%rsp)
+  0x00007fbea12e48b8: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fbea12e48c0: callq   0x7fbea0d31580    ; ImmutableOopMap{[152]=Oop rax=Oop }
+                                                ;*synchronization entry
+                                                ; - java.lang.Object::<init>@-1 (line 50)
+                                                ; - java.lang.String::<init>@1 (line 3252)
+                                                ; - java.lang.StringLatin1::newString@13 (line 715)
+                                                ; - java.lang.StringBuilder::toString@16 (line 448)
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@21 (line 39)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fbea12e48c5: jmpq    0x7fbea12e46e8
+  0x00007fbea12e48ca: mov     0xc(%rsi),%edx
+  0x00007fbea12e48cd: shl     $0x3,%rdx
+  0x00007fbea12e48d1: cmp     $0x0,%rdx
+  0x00007fbea12e48d5: je      0x7fbea12e46fe
+  0x00007fbea12e48db: mov     %rdx,(%rsp)
+  0x00007fbea12e48df: callq   0x7fbea0d31a80    ;   {runtime_call g1_pre_barrier_slow}
+  0x00007fbea12e48e4: jmpq    0x7fbea12e46fe
+  0x00007fbea12e48e9: cmp     $0x0,%rax
+  0x00007fbea12e48ed: je      0x7fbea12e471d
+  0x00007fbea12e48f3: mov     %rsi,(%rsp)
+  0x00007fbea12e48f7: callq   0x7fbea0d31d00    ;   {runtime_call g1_post_barrier_slow}
+  0x00007fbea12e48fc: jmpq    0x7fbea12e471d
+  0x00007fbea12e4901: nop
+  0x00007fbea12e4902: nop
+  0x00007fbea12e4903: mov     0x420(%r15),%rax
+  0x00007fbea12e490a: movabs  $0x0,%r10
+  0x00007fbea12e4914: mov     %r10,0x420(%r15)
+  0x00007fbea12e491b: movabs  $0x0,%r10
+  0x00007fbea12e4925: mov     %r10,0x428(%r15)
+  0x00007fbea12e492c: add     $0xb0,%rsp
+  0x00007fbea12e4933: pop     %rbp
+  0x00007fbea12e4934: jmpq    0x7fbea0d2c800    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007fbea12e4939: hlt
+  0x00007fbea12e493a: hlt
+  0x00007fbea12e493b: hlt
+  0x00007fbea12e493c: hlt
+  0x00007fbea12e493d: hlt
+  0x00007fbea12e493e: hlt
+  0x00007fbea12e493f: hlt
+[Stub Code]
+  0x00007fbea12e4940: nopl    0x0(%rax,%rax)    ;   {no_reloc}
+  0x00007fbea12e4945: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007fbea12e494f: jmpq    0x7fbea12e494f    ;   {runtime_call}
+  0x00007fbea12e4954: nop
+  0x00007fbea12e4955: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007fbea12e495f: jmpq    0x7fbea12e495f    ;   {runtime_call}
+  0x00007fbea12e4964: nop
+  0x00007fbea12e4965: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007fbea12e496f: jmpq    0x7fbea12e496f    ;   {runtime_call}
+  0x00007fbea12e4974: nop
+  0x00007fbea12e4975: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007fbea12e497f: jmpq    0x7fbea12e497f    ;   {runtime_call}
+  0x00007fbea12e4984: nop
+  0x00007fbea12e4985: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007fbea12e498f: jmpq    0x7fbea12e498f    ;   {runtime_call}
+[Exception Handler]
+  0x00007fbea12e4994: callq   0x7fbea0d2e880    ;   {runtime_call handle_exception_from_callee Runtime1 stub}
+  0x00007fbea12e4999: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007fbea12e499e: sub     $0x80,%rsp
+  0x00007fbea12e49a5: mov     %rax,0x78(%rsp)
+  0x00007fbea12e49aa: mov     %rcx,0x70(%rsp)
+  0x00007fbea12e49af: mov     %rdx,0x68(%rsp)
+  0x00007fbea12e49b4: mov     %rbx,0x60(%rsp)
+  0x00007fbea12e49b9: mov     %rbp,0x50(%rsp)
+  0x00007fbea12e49be: mov     %rsi,0x48(%rsp)
+  0x00007fbea12e49c3: mov     %rdi,0x40(%rsp)
+  0x00007fbea12e49c8: mov     %r8,0x38(%rsp)
+  0x00007fbea12e49cd: mov     %r9,0x30(%rsp)
+  0x00007fbea12e49d2: mov     %r10,0x28(%rsp)
+  0x00007fbea12e49d7: mov     %r11,0x20(%rsp)
+  0x00007fbea12e49dc: mov     %r12,0x18(%rsp)
+  0x00007fbea12e49e1: mov     %r13,0x10(%rsp)
+  0x00007fbea12e49e6: mov     %r14,0x8(%rsp)
+  0x00007fbea12e49eb: mov     %r15,(%rsp)
+  0x00007fbea12e49ef: movabs  $0x7fbebfaa6e9e,%rdi  ;   {external_word}
+  0x00007fbea12e49f9: movabs  $0x7fbea12e4999,%rsi  ;   {internal_word}
+  0x00007fbea12e4a03: mov     %rsp,%rdx
+  0x00007fbea12e4a06: and     $0xfffffffffffffff0,%rsp
+  0x00007fbea12e4a0a: callq   0x7fbebf6af0f0    ;   {runtime_call MacroAssembler::debug64(char*, long, long*)}
+  0x00007fbea12e4a0f: hlt
+[Deopt Handler Code]
+  0x00007fbea12e4a10: movabs  $0x7fbea12e4a10,%r10  ;   {section_word}
+  0x00007fbea12e4a1a: push    %r10
+  0x00007fbea12e4a1c: jmpq    0x7fbea0c6a4a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007fbea12e4a21: hlt
+  0x00007fbea12e4a22: hlt
+  0x00007fbea12e4a23: hlt
+  0x00007fbea12e4a24: hlt
+  0x00007fbea12e4a25: hlt
+  0x00007fbea12e4a26: hlt
+  0x00007fbea12e4a27: hlt
+
+ImmutableOopMap{[144]=Oop }pc offsets: 276 396 516
+ImmutableOopMap{[152]=Oop }pc offsets: 1028
+ImmutableOopMap{}pc offsets: 1300
+ImmutableOopMap{rsi=Oop }pc offsets: 1347
+ImmutableOopMap{}pc offsets: 1360
+ImmutableOopMap{rax=Oop }pc offsets: 1393
+ImmutableOopMap{[144]=Oop }pc offsets: 1426 1459 1492 1525
+ImmutableOopMap{rbx=Oop }pc offsets: 1558 1571
+ImmutableOopMap{[152]=Oop rax=Oop }pc offsets: 1604 1637 Compiled method (c2)     521  641       4       pl.jgardo.variables.VariableBenchmark::testNonFinal (25 bytes)
+ total in heap  [0x00007fbea8743f10,0x00007fbea8744300] = 1008
+ relocation     [0x00007fbea8744088,0x00007fbea87440a8] = 32
+ main code      [0x00007fbea87440c0,0x00007fbea8744200] = 320
+ stub code      [0x00007fbea8744200,0x00007fbea8744218] = 24
+ oops           [0x00007fbea8744218,0x00007fbea8744230] = 24
+ metadata       [0x00007fbea8744230,0x00007fbea8744248] = 24
+ scopes data    [0x00007fbea8744248,0x00007fbea8744268] = 32
+ scopes pcs     [0x00007fbea8744268,0x00007fbea87442c8] = 96
+ dependencies   [0x00007fbea87442c8,0x00007fbea87442d0] = 8
+ handler table  [0x00007fbea87442d0,0x00007fbea8744300] = 48
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.testNonFinal()Ljava/lang/String;  [0x00007fbea87440c0, 0x00007fbea8744218]  344 bytes
+Argument 0 is unknown.RIP: 0x7fbea87440c0 Code size: 0x00000158
+[Entry Point]
+[Constants]
+  # {method} {0x00007fbe91ba9a78} 'testNonFinal' '()Ljava/lang/String;' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007fbea87440c0: mov     0x8(%rsi),%r10d
+  0x00007fbea87440c4: movabs  $0x800000000,%r12
+  0x00007fbea87440ce: add     %r12,%r10
+  0x00007fbea87440d1: xor     %r12,%r12
+  0x00007fbea87440d4: cmp     %r10,%rax
+  0x00007fbea87440d7: jne     0x7fbea0c68c00    ;   {runtime_call ic_miss_stub}
+  0x00007fbea87440dd: nop
+[Verified Entry Point]
+  0x00007fbea87440e0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fbea87440e7: push    %rbp
+  0x00007fbea87440e8: sub     $0x10,%rsp        ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@-1 (line 37)
+
+  0x00007fbea87440ec: mov     0x118(%r15),%rbp
+  0x00007fbea87440f3: mov     %rbp,%r10
+  0x00007fbea87440f6: add     $0x18,%r10
+  0x00007fbea87440fa: cmp     0x128(%r15),%r10
+  0x00007fbea8744101: jnb     0x7fbea87441bc
+  0x00007fbea8744107: mov     %r10,0x118(%r15)
+  0x00007fbea874410e: prefetchnta 0xc0(%r10)
+  0x00007fbea8744116: movq    $0x1,0x0(%rbp)
+  0x00007fbea874411e: prefetchnta 0x100(%r10)
+  0x00007fbea8744126: movl    $0x820,0x8(%rbp)  ;   {metadata({type array byte})}
+  0x00007fbea874412d: prefetchnta 0x140(%r10)
+  0x00007fbea8744135: movl    $0x2,0xc(%rbp)
+  0x00007fbea874413c: prefetchnta 0x180(%r10)
+  0x00007fbea8744144: mov     0x118(%r15),%rax
+  0x00007fbea874414b: movb    $0x61,0x10(%rbp)
+  0x00007fbea874414f: mov     %rax,%r10
+  0x00007fbea8744152: add     $0x18,%r10
+  0x00007fbea8744156: movb    $0x62,0x11(%rbp)
+  0x00007fbea874415a: cmp     0x128(%r15),%r10
+  0x00007fbea8744161: jnb     0x7fbea87441d8
+  0x00007fbea8744163: mov     %r10,0x118(%r15)
+  0x00007fbea874416a: prefetchnta 0xc0(%r10)
+  0x00007fbea8744172: mov     $0x1808,%r10d     ;   {metadata('java/lang/String')}
+  0x00007fbea8744178: movabs  $0x800000000,%r12
+  0x00007fbea8744182: add     %r12,%r10
+  0x00007fbea8744185: xor     %r12,%r12
+  0x00007fbea8744188: mov     0xb8(%r10),%r10
+  0x00007fbea874418f: mov     %r10,(%rax)
+  0x00007fbea8744192: movl    $0x1808,0x8(%rax)  ;   {metadata('java/lang/String')}
+  0x00007fbea8744199: movq    $0x0,0x10(%rax)
+  0x00007fbea87441a1: mov     %rbp,%r10
+  0x00007fbea87441a4: shr     $0x3,%r10
+  0x00007fbea87441a8: mov     %r10d,0xc(%rax)
+  0x00007fbea87441ac: add     $0x10,%rsp
+  0x00007fbea87441b0: pop     %rbp
+  0x00007fbea87441b1: mov     0x108(%r15),%r10
+  0x00007fbea87441b8: test    %eax,(%r10)       ;   {poll_return}
+  0x00007fbea87441bb: retq
+  0x00007fbea87441bc: movabs  $0x800000820,%rsi  ;   {metadata({type array byte})}
+  0x00007fbea87441c6: mov     $0x2,%edx
+  0x00007fbea87441cb: callq   0x7fbea0d32d00    ; ImmutableOopMap{}
+                                                ;*new {reexecute=1 rethrow=0 return_oop=1}
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@6 (line 39)
+                                                ;   {runtime_call _new_array_Java}
+  0x00007fbea87441d0: mov     %rax,%rbp
+  0x00007fbea87441d3: jmpq    0x7fbea8744144
+  0x00007fbea87441d8: movabs  $0x800001808,%rsi  ;   {metadata('java/lang/String')}
+  0x00007fbea87441e2: nop
+  0x00007fbea87441e3: callq   0x7fbea0d34d00    ; ImmutableOopMap{rbp=Oop }
+                                                ;*new {reexecute=1 rethrow=0 return_oop=1}
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@6 (line 39)
+                                                ;   {runtime_call _new_instance_Java}
+  0x00007fbea87441e8: jmp     0x7fbea87441a1
+  0x00007fbea87441ea: mov     %rax,%rsi
+  0x00007fbea87441ed: jmp     0x7fbea87441f2
+  0x00007fbea87441ef: mov     %rax,%rsi         ;*invokespecial <init> {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::testNonFinal@10 (line 39)
+
+  0x00007fbea87441f2: add     $0x10,%rsp
+  0x00007fbea87441f6: pop     %rbp
+  0x00007fbea87441f7: jmpq    0x7fbea0d36f00    ;   {runtime_call _rethrow_Java}
+  0x00007fbea87441fc: hlt
+  0x00007fbea87441fd: hlt
+  0x00007fbea87441fe: hlt
+  0x00007fbea87441ff: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fbea8744200: jmpq    0x7fbea0d2c380    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fbea8744205: callq   0x7fbea874420a
+  0x00007fbea874420a: subq    $0x5,(%rsp)
+  0x00007fbea874420f: jmpq    0x7fbea0c6a4a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007fbea8744214: hlt
+  0x00007fbea8744215: hlt
+  0x00007fbea8744216: hlt
+  0x00007fbea8744217: hlt
+
+ImmutableOopMap{}pc offsets: 272
+ImmutableOopMap{rbp=Oop }pc offsets: 296 52065020,568 ops/s

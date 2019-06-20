@@ -1,0 +1,535 @@
+Compiled method (c1)     496  633       3       pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n (9 bytes)
+ total in heap  [0x00007f6969027e10,0x00007f6969028598] = 1928
+ relocation     [0x00007f6969027f88,0x00007f6969027fe0] = 88
+ main code      [0x00007f6969027fe0,0x00007f6969028340] = 864
+ stub code      [0x00007f6969028340,0x00007f69690283e8] = 168
+ oops           [0x00007f69690283e8,0x00007f69690283f0] = 8
+ metadata       [0x00007f69690283f0,0x00007f6969028410] = 32
+ scopes data    [0x00007f6969028410,0x00007f6969028470] = 96
+ scopes pcs     [0x00007f6969028470,0x00007f6969028570] = 256
+ dependencies   [0x00007f6969028570,0x00007f6969028578] = 8
+ nul chk table  [0x00007f6969028578,0x00007f6969028598] = 32
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark.n_n()D  [0x00007f6969027fe0, 0x00007f69690283e8]  1032 bytes
+Argument 0 is unknown.RIP: 0x7f6969027fe0 Code size: 0x00000408
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007f6959369af0} 'n_n' '()D' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark'
+  #           [sp+0x60]  (sp of caller)
+  0x00007f6969027fe0: mov     0x8(%rsi),%r10d
+  0x00007f6969027fe4: shl     $0x3,%r10
+  0x00007f6969027fe8: movabs  $0x800000000,%r12
+  0x00007f6969027ff2: add     %r12,%r10
+  0x00007f6969027ff5: xor     %r12,%r12
+  0x00007f6969027ff8: cmp     %rax,%r10
+  0x00007f6969027ffb: jne     0x7f69689b1d00    ;   {runtime_call ic_miss_stub}
+  0x00007f6969028001: nopw    0x0(%rax,%rax)
+  0x00007f696902800c: nop
+  0x00007f6969028010: nopw    0x0(%rax,%rax)
+  0x00007f696902801b: nop
+  0x00007f696902801f: nop
+[Verified Entry Point]
+  0x00007f6969028020: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f6969028027: push    %rbp
+  0x00007f6969028028: sub     $0x50,%rsp
+  0x00007f696902802c: movabs  $0x7f6959391918,%rdx  ;   {metadata(method data for {method} {0x00007f6959369af0} 'n_n' '()D' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark')}
+  0x00007f6969028036: mov     0x104(%rdx),%edi
+  0x00007f696902803c: add     $0x8,%edi
+  0x00007f696902803f: mov     %edi,0x104(%rdx)
+  0x00007f6969028045: and     $0x1ff8,%edi
+  0x00007f696902804b: cmp     $0x0,%edi
+  0x00007f696902804e: je      0x7f6969028292
+  0x00007f6969028054: movabs  $0x7164d75b8,%rdx  ;   {oop(a 'java/lang/Class'{0x00000007164d75b8} = 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark')}
+  0x00007f696902805e: mov     0x78(%rdx),%edx
+  0x00007f6969028061: shl     $0x3,%rdx         ;*getstatic objectHolderNonFinal {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@0 (line 70)
+
+  0x00007f6969028065: cmp     (%rdx),%rax       ;*invokevirtual getFromNonFinalList {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ; implicit exception: dispatches to 0x00007f69690282b3
+  0x00007f6969028068: mov     %rdx,%rsi
+  0x00007f696902806b: movabs  $0x7f6959391918,%rdi  ;   {metadata(method data for {method} {0x00007f6959369af0} 'n_n' '()D' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark')}
+  0x00007f6969028075: addq    $0x1,0x158(%rdi)
+  0x00007f696902807d: movabs  $0x7f6959391ad0,%rsi  ;   {metadata(method data for {method} {0x00007f6959391340} 'getFromNonFinalList' '(I)I' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark$ObjectHolder')}
+  0x00007f6969028087: mov     0x104(%rsi),%edi
+  0x00007f696902808d: add     $0x8,%edi
+  0x00007f6969028090: mov     %edi,0x104(%rsi)
+  0x00007f6969028096: and     $0x7ffff8,%edi
+  0x00007f696902809c: cmp     $0x0,%edi
+  0x00007f696902809f: je      0x7f69690282b8
+  0x00007f69690280a5: mov     0x10(%rdx),%esi
+  0x00007f69690280a8: shl     $0x3,%rsi         ;*getfield nonFinalPointFinals {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@1 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f69690280ac: cmp     (%rsi),%rax       ; implicit exception: dispatches to 0x00007f69690282d9
+  0x00007f69690280af: mov     %rsi,%rdx
+  0x00007f69690280b2: movabs  $0x7f6959391ad0,%rdi  ;   {metadata(method data for {method} {0x00007f6959391340} 'getFromNonFinalList' '(I)I' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark$ObjectHolder')}
+  0x00007f69690280bc: mov     0x8(%rdx),%edx
+  0x00007f69690280bf: shl     $0x3,%rdx
+  0x00007f69690280c3: movabs  $0x800000000,%r12
+  0x00007f69690280cd: add     %r12,%rdx
+  0x00007f69690280d0: xor     %r12,%r12
+  0x00007f69690280d3: cmp     0x150(%rdi),%rdx
+  0x00007f69690280da: jne     0x7f69690280e9
+  0x00007f69690280dc: addq    $0x1,0x158(%rdi)
+  0x00007f69690280e4: jmpq    0x7f696902814f
+  0x00007f69690280e9: cmp     0x160(%rdi),%rdx
+  0x00007f69690280f0: jne     0x7f69690280ff
+  0x00007f69690280f2: addq    $0x1,0x168(%rdi)
+  0x00007f69690280fa: jmpq    0x7f696902814f
+  0x00007f69690280ff: cmpq    $0x0,0x150(%rdi)
+  0x00007f696902810a: jne     0x7f6969028123
+  0x00007f696902810c: mov     %rdx,0x150(%rdi)
+  0x00007f6969028113: movq    $0x1,0x158(%rdi)
+  0x00007f696902811e: jmpq    0x7f696902814f
+  0x00007f6969028123: cmpq    $0x0,0x160(%rdi)
+  0x00007f696902812e: jne     0x7f6969028147
+  0x00007f6969028130: mov     %rdx,0x160(%rdi)
+  0x00007f6969028137: movq    $0x1,0x168(%rdi)
+  0x00007f6969028142: jmpq    0x7f696902814f
+  0x00007f6969028147: addq    $0x1,0x140(%rdi)
+  0x00007f696902814f: mov     $0x0,%edx         ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f6969028154: nop
+  0x00007f6969028155: movabs  $0x8002e84f8,%rax
+  0x00007f696902815f: callq   0x7f69689c8360    ; ImmutableOopMap{}
+                                                ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {virtual_call}
+  0x00007f6969028164: cmp     $0x0,%rax
+  0x00007f6969028168: jne     0x7f6969028180
+  0x00007f696902816a: movabs  $0x7f6959391ad0,%rbx  ;   {metadata(method data for {method} {0x00007f6959391340} 'getFromNonFinalList' '(I)I' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark$ObjectHolder')}
+  0x00007f6969028174: orb     $0x1,0x171(%rbx)
+  0x00007f696902817b: jmpq    0x7f6969028260
+  0x00007f6969028180: movabs  $0x80030f600,%rsi  ;   {metadata('java/lang/Integer')}
+  0x00007f696902818a: mov     0x8(%rax),%edi
+  0x00007f696902818d: shl     $0x3,%rdi
+  0x00007f6969028191: movabs  $0x800000000,%r12
+  0x00007f696902819b: add     %r12,%rdi
+  0x00007f696902819e: xor     %r12,%r12
+  0x00007f69690281a1: cmp     %rdi,%rsi
+  0x00007f69690281a4: jne     0x7f6969028244
+  0x00007f69690281aa: movabs  $0x7f6959391ad0,%rbx  ;   {metadata(method data for {method} {0x00007f6959391340} 'getFromNonFinalList' '(I)I' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark$ObjectHolder')}
+  0x00007f69690281b4: mov     0x8(%rax),%esi
+  0x00007f69690281b7: shl     $0x3,%rsi
+  0x00007f69690281bb: movabs  $0x800000000,%r12
+  0x00007f69690281c5: add     %r12,%rsi
+  0x00007f69690281c8: xor     %r12,%r12
+  0x00007f69690281cb: cmp     0x188(%rbx),%rsi
+  0x00007f69690281d2: jne     0x7f69690281e1
+  0x00007f69690281d4: addq    $0x1,0x190(%rbx)
+  0x00007f69690281dc: jmpq    0x7f6969028260
+  0x00007f69690281e1: cmp     0x198(%rbx),%rsi
+  0x00007f69690281e8: jne     0x7f69690281f7
+  0x00007f69690281ea: addq    $0x1,0x1a0(%rbx)
+  0x00007f69690281f2: jmpq    0x7f6969028260
+  0x00007f69690281f7: cmpq    $0x0,0x188(%rbx)
+  0x00007f6969028202: jne     0x7f696902821b
+  0x00007f6969028204: mov     %rsi,0x188(%rbx)
+  0x00007f696902820b: movq    $0x1,0x190(%rbx)
+  0x00007f6969028216: jmpq    0x7f6969028260
+  0x00007f696902821b: cmpq    $0x0,0x198(%rbx)
+  0x00007f6969028226: jne     0x7f696902823f
+  0x00007f6969028228: mov     %rsi,0x198(%rbx)
+  0x00007f696902822f: movq    $0x1,0x1a0(%rbx)
+  0x00007f696902823a: jmpq    0x7f6969028260
+  0x00007f696902823f: jmpq    0x7f6969028260
+  0x00007f6969028244: movabs  $0x7f6959391ad0,%rbx  ;   {metadata(method data for {method} {0x00007f6959391340} 'getFromNonFinalList' '(I)I' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark$ObjectHolder')}
+  0x00007f696902824e: subq    $0x1,0x178(%rbx)
+  0x00007f6969028256: jmpq    0x7f69690282de
+  0x00007f696902825b: jmpq    0x7f6969028260
+  0x00007f6969028260: mov     %rax,%rsi         ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@10 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f6969028263: cmp     (%rsi),%rax       ;*invokevirtual intValue {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@13 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ; implicit exception: dispatches to 0x00007f69690282e7
+  0x00007f6969028266: mov     %rsi,%rdi
+  0x00007f6969028269: movabs  $0x7f6959391ad0,%rbx  ;   {metadata(method data for {method} {0x00007f6959391340} 'getFromNonFinalList' '(I)I' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark$ObjectHolder')}
+  0x00007f6969028273: addq    $0x1,0x1b0(%rbx)
+  0x00007f696902827b: mov     0xc(%rsi),%esi    ;*getfield value {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.lang.Integer::intValue@1 (line 1123)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@13 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f696902827e: vcvtsi2sdl %esi,%xmm0,%xmm0
+  0x00007f6969028282: add     $0x50,%rsp
+  0x00007f6969028286: pop     %rbp
+  0x00007f6969028287: mov     0x108(%r15),%r10
+  0x00007f696902828e: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f6969028291: retq
+  0x00007f6969028292: movabs  $0x7f6959369af0,%r10  ;   {metadata({method} {0x00007f6959369af0} 'n_n' '()D' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark')}
+  0x00007f696902829c: mov     %r10,0x8(%rsp)
+  0x00007f69690282a1: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f69690282a9: callq   0x7f6968a7d000    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@-1 (line 70)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f69690282ae: jmpq    0x7f6969028054
+  0x00007f69690282b3: callq   0x7f6968a78920    ; ImmutableOopMap{rdx=Oop }
+                                                ;*invokevirtual getFromNonFinalList {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f69690282b8: movabs  $0x7f6959391340,%r10  ;   {metadata({method} {0x00007f6959391340} 'getFromNonFinalList' '(I)I' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark$ObjectHolder')}
+  0x00007f69690282c2: mov     %r10,0x8(%rsp)
+  0x00007f69690282c7: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f69690282cf: callq   0x7f6968a7d000    ; ImmutableOopMap{rdx=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@-1 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f69690282d4: jmpq    0x7f69690280a5
+  0x00007f69690282d9: callq   0x7f6968a78920    ; ImmutableOopMap{rsi=Oop }
+                                                ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f69690282de: mov     %rax,(%rsp)
+  0x00007f69690282e2: callq   0x7f6968a7a9a0    ; ImmutableOopMap{}
+                                                ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@10 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call throw_class_cast_exception Runtime1 stub}
+  0x00007f69690282e7: callq   0x7f6968a78920    ; ImmutableOopMap{rsi=Oop }
+                                                ;*invokevirtual intValue {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@13 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f69690282ec: nop
+  0x00007f69690282ed: nop
+  0x00007f69690282ee: mov     0x420(%r15),%rax
+  0x00007f69690282f5: movabs  $0x0,%r10
+  0x00007f69690282ff: mov     %r10,0x420(%r15)
+  0x00007f6969028306: movabs  $0x0,%r10
+  0x00007f6969028310: mov     %r10,0x428(%r15)
+  0x00007f6969028317: add     $0x50,%rsp
+  0x00007f696902831b: pop     %rbp
+  0x00007f696902831c: jmpq    0x7f6968a78100    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007f6969028321: hlt
+  0x00007f6969028322: hlt
+  0x00007f6969028323: hlt
+  0x00007f6969028324: hlt
+  0x00007f6969028325: hlt
+  0x00007f6969028326: hlt
+  0x00007f6969028327: hlt
+  0x00007f6969028328: hlt
+  0x00007f6969028329: hlt
+  0x00007f696902832a: hlt
+  0x00007f696902832b: hlt
+  0x00007f696902832c: hlt
+  0x00007f696902832d: hlt
+  0x00007f696902832e: hlt
+  0x00007f696902832f: hlt
+  0x00007f6969028330: hlt
+  0x00007f6969028331: hlt
+  0x00007f6969028332: hlt
+  0x00007f6969028333: hlt
+  0x00007f6969028334: hlt
+  0x00007f6969028335: hlt
+  0x00007f6969028336: hlt
+  0x00007f6969028337: hlt
+  0x00007f6969028338: hlt
+  0x00007f6969028339: hlt
+  0x00007f696902833a: hlt
+  0x00007f696902833b: hlt
+  0x00007f696902833c: hlt
+  0x00007f696902833d: hlt
+  0x00007f696902833e: hlt
+  0x00007f696902833f: hlt
+[Stub Code]
+  0x00007f6969028340: nopl    0x0(%rax,%rax)    ;   {no_reloc}
+  0x00007f6969028345: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007f696902834f: jmpq    0x7f696902834f    ;   {runtime_call}
+[Exception Handler]
+  0x00007f6969028354: callq   0x7f6968a7a500    ;   {runtime_call handle_exception_from_callee Runtime1 stub}
+  0x00007f6969028359: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f696902835e: sub     $0x80,%rsp
+  0x00007f6969028365: mov     %rax,0x78(%rsp)
+  0x00007f696902836a: mov     %rcx,0x70(%rsp)
+  0x00007f696902836f: mov     %rdx,0x68(%rsp)
+  0x00007f6969028374: mov     %rbx,0x60(%rsp)
+  0x00007f6969028379: mov     %rbp,0x50(%rsp)
+  0x00007f696902837e: mov     %rsi,0x48(%rsp)
+  0x00007f6969028383: mov     %rdi,0x40(%rsp)
+  0x00007f6969028388: mov     %r8,0x38(%rsp)
+  0x00007f696902838d: mov     %r9,0x30(%rsp)
+  0x00007f6969028392: mov     %r10,0x28(%rsp)
+  0x00007f6969028397: mov     %r11,0x20(%rsp)
+  0x00007f696902839c: mov     %r12,0x18(%rsp)
+  0x00007f69690283a1: mov     %r13,0x10(%rsp)
+  0x00007f69690283a6: mov     %r14,0x8(%rsp)
+  0x00007f69690283ab: mov     %r15,(%rsp)
+  0x00007f69690283af: movabs  $0x7f6987e21022,%rdi  ;   {external_word}
+  0x00007f69690283b9: movabs  $0x7f6969028359,%rsi  ;   {internal_word}
+  0x00007f69690283c3: mov     %rsp,%rdx
+  0x00007f69690283c6: and     $0xfffffffffffffff0,%rsp
+  0x00007f69690283ca: callq   0x7f6987a2da80    ;   {runtime_call}
+  0x00007f69690283cf: hlt
+[Deopt Handler Code]
+  0x00007f69690283d0: movabs  $0x7f69690283d0,%r10  ;   {section_word}
+  0x00007f69690283da: push    %r10
+  0x00007f69690283dc: jmpq    0x7f69689b35a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f69690283e1: hlt
+  0x00007f69690283e2: hlt
+  0x00007f69690283e3: hlt
+  0x00007f69690283e4: hlt
+  0x00007f69690283e5: hlt
+  0x00007f69690283e6: hlt
+  0x00007f69690283e7: hlt
+
+ImmutableOopMap{}pc offsets: 388
+ImmutableOopMap{rsi=Oop }pc offsets: 718
+ImmutableOopMap{rdx=Oop }pc offsets: 728 756
+ImmutableOopMap{rsi=Oop }pc offsets: 766
+ImmutableOopMap{}pc offsets: 775
+ImmutableOopMap{rsi=Oop }pc offsets: 780 Compiled method (c2)     516  639       4       pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n (9 bytes)
+ total in heap  [0x00007f697048c910,0x00007f697048cf18] = 1544
+ relocation     [0x00007f697048ca88,0x00007f697048cab0] = 40
+ main code      [0x00007f697048cac0,0x00007f697048cc00] = 320
+ stub code      [0x00007f697048cc00,0x00007f697048cc18] = 24
+ oops           [0x00007f697048cc18,0x00007f697048cc20] = 8
+ metadata       [0x00007f697048cc20,0x00007f697048cc58] = 56
+ scopes data    [0x00007f697048cc58,0x00007f697048cd18] = 192
+ scopes pcs     [0x00007f697048cd18,0x00007f697048cee8] = 464
+ dependencies   [0x00007f697048cee8,0x00007f697048cef0] = 8
+ nul chk table  [0x00007f697048cef0,0x00007f697048cf18] = 40
+----------------------------------------------------------------------
+pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark.n_n()D  [0x00007f697048cac0, 0x00007f697048cc18]  344 bytes
+Argument 0 is unknown.RIP: 0x7f697048cac0 Code size: 0x00000158
+[Entry Point]
+[Constants]
+  # {method} {0x00007f6959369af0} 'n_n' '()D' in 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark'
+  #           [sp+0x30]  (sp of caller)
+  0x00007f697048cac0: mov     0x8(%rsi),%r10d
+  0x00007f697048cac4: shl     $0x3,%r10
+  0x00007f697048cac8: movabs  $0x800000000,%r12
+  0x00007f697048cad2: add     %r12,%r10
+  0x00007f697048cad5: xor     %r12,%r12
+  0x00007f697048cad8: cmp     %r10,%rax
+  0x00007f697048cadb: jne     0x7f69689b1d00    ;   {runtime_call ic_miss_stub}
+  0x00007f697048cae1: nop
+  0x00007f697048cae4: nopl    0x0(%rax,%rax)
+  0x00007f697048caec: nop
+[Verified Entry Point]
+  0x00007f697048caf0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f697048caf7: push    %rbp
+  0x00007f697048caf8: sub     $0x20,%rsp        ;*synchronization entry
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@-1 (line 70)
+
+  0x00007f697048cafc: movabs  $0x7164d75b8,%r10  ;   {oop(a 'java/lang/Class'{0x00000007164d75b8} = 'pl/jgardo/field/instance/StaticHolderFinalFieldBenchmark')}
+  0x00007f697048cb06: mov     0x78(%r10),%r11d  ;*getstatic objectHolderNonFinal {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@0 (line 70)
+
+  0x00007f697048cb0a: mov     0x10(%r12,%r11,8),%r11d  ;*getfield nonFinalPointFinals {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@1 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ; implicit exception: dispatches to 0x00007f697048cbb2
+  0x00007f697048cb0f: mov     0x8(%r12,%r11,8),%r10d  ; implicit exception: dispatches to 0x00007f697048cbbe
+  0x00007f697048cb14: cmp     $0x5d09f,%r10d    ;   {metadata('java/util/ArrayList')}
+  0x00007f697048cb1b: jne     0x7f697048cb68
+  0x00007f697048cb1d: lea     (%r12,%r11,8),%r10  ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb21: mov     0x10(%r10),%ebp   ;*getfield size {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.ArrayList::get@2 (line 458)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb25: test    %ebp,%ebp
+  0x00007f697048cb27: jl      0x7f697048cb7a    ;*invokestatic checkIndex {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.Objects::checkIndex@3 (line 372)
+                                                ; - java.util.ArrayList::get@5 (line 458)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb29: test    %ebp,%ebp
+  0x00007f697048cb2b: jbe     0x7f697048cb8a
+  0x00007f697048cb2d: mov     0x14(%r10),%ebp   ;*getfield elementData {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.ArrayList::elementData@1 (line 442)
+                                                ; - java.util.ArrayList::get@11 (line 459)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb31: mov     0xc(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007f697048cbca
+  0x00007f697048cb36: test    %r10d,%r10d
+  0x00007f697048cb39: jbe     0x7f697048cb9a
+  0x00007f697048cb3b: mov     0x10(%r12,%rbp,8),%ebp  ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.ArrayList::elementData@5 (line 442)
+                                                ; - java.util.ArrayList::get@11 (line 459)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb40: mov     0x8(%r12,%rbp,8),%r11d  ; implicit exception: dispatches to 0x00007f697048cbd6
+  0x00007f697048cb45: cmp     $0x61ec0,%r11d    ;   {metadata('java/lang/Integer')}
+  0x00007f697048cb4c: jne     0x7f697048cba6
+  0x00007f697048cb4e: lea     (%r12,%rbp,8),%r10  ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@10 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb52: vcvtsi2sdl 0xc(%r10),%xmm0,%xmm0
+                                                ;*i2d {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@7 (line 70)
+
+  0x00007f697048cb58: add     $0x20,%rsp
+  0x00007f697048cb5c: pop     %rbp
+  0x00007f697048cb5d: mov     0x108(%r15),%r10
+  0x00007f697048cb64: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f697048cb67: retq
+  0x00007f697048cb68: mov     $0xffffffde,%esi
+  0x00007f697048cb6d: mov     %r11d,%ebp
+  0x00007f697048cb70: nop
+  0x00007f697048cb73: callq   0x7f69689b3980    ; ImmutableOopMap{rbp=NarrowOop }
+                                                ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cb78: ud2                       ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb7a: mov     $0xffffffcc,%esi
+  0x00007f697048cb7f: mov     %r10,(%rsp)
+  0x00007f697048cb83: callq   0x7f69689b3980    ; ImmutableOopMap{[0]=Oop }
+                                                ;*invokestatic checkIndex {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.Objects::checkIndex@3 (line 372)
+                                                ; - java.util.ArrayList::get@5 (line 458)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cb88: ud2
+  0x00007f697048cb8a: mov     $0xffffffe4,%esi
+  0x00007f697048cb8f: mov     %r10,(%rsp)
+  0x00007f697048cb93: callq   0x7f69689b3980    ; ImmutableOopMap{[0]=Oop }
+                                                ;*invokestatic checkIndex {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.Objects::checkIndex@3 (line 372)
+                                                ; - java.util.ArrayList::get@5 (line 458)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cb98: ud2                       ;*invokestatic checkIndex {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.Objects::checkIndex@3 (line 372)
+                                                ; - java.util.ArrayList::get@5 (line 458)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cb9a: mov     $0xffffffe4,%esi
+  0x00007f697048cb9f: callq   0x7f69689b3980    ; ImmutableOopMap{rbp=NarrowOop }
+                                                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.ArrayList::elementData@5 (line 442)
+                                                ; - java.util.ArrayList::get@11 (line 459)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cba4: ud2                       ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.ArrayList::elementData@5 (line 442)
+                                                ; - java.util.ArrayList::get@11 (line 459)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cba6: mov     $0xffffffde,%esi
+  0x00007f697048cbab: callq   0x7f69689b3980    ; ImmutableOopMap{rbp=NarrowOop }
+                                                ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@10 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cbb0: ud2                       ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@10 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cbb2: mov     $0xfffffff6,%esi
+  0x00007f697048cbb7: callq   0x7f69689b3980    ; ImmutableOopMap{}
+                                                ;*invokevirtual getFromNonFinalList {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cbbc: ud2                       ;*invokevirtual getFromNonFinalList {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cbbe: mov     $0xfffffff6,%esi
+  0x00007f697048cbc3: callq   0x7f69689b3980    ; ImmutableOopMap{}
+                                                ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cbc8: ud2                       ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cbca: mov     $0xfffffff6,%esi
+  0x00007f697048cbcf: callq   0x7f69689b3980    ; ImmutableOopMap{}
+                                                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.ArrayList::elementData@5 (line 442)
+                                                ; - java.util.ArrayList::get@11 (line 459)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cbd4: ud2                       ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - java.util.ArrayList::elementData@5 (line 442)
+                                                ; - java.util.ArrayList::get@11 (line 459)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@5 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cbd6: mov     $0xfffffff4,%esi
+  0x00007f697048cbdb: callq   0x7f69689b3980    ; ImmutableOopMap{}
+                                                ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@10 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f697048cbe0: ud2                       ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark$ObjectHolder::getFromNonFinalList@10 (line 36)
+                                                ; - pl.jgardo.field.instance.StaticHolderFinalFieldBenchmark::n_n@4 (line 70)
+
+  0x00007f697048cbe2: hlt
+  0x00007f697048cbe3: hlt
+  0x00007f697048cbe4: hlt
+  0x00007f697048cbe5: hlt
+  0x00007f697048cbe6: hlt
+  0x00007f697048cbe7: hlt
+  0x00007f697048cbe8: hlt
+  0x00007f697048cbe9: hlt
+  0x00007f697048cbea: hlt
+  0x00007f697048cbeb: hlt
+  0x00007f697048cbec: hlt
+  0x00007f697048cbed: hlt
+  0x00007f697048cbee: hlt
+  0x00007f697048cbef: hlt
+  0x00007f697048cbf0: hlt
+  0x00007f697048cbf1: hlt
+  0x00007f697048cbf2: hlt
+  0x00007f697048cbf3: hlt
+  0x00007f697048cbf4: hlt
+  0x00007f697048cbf5: hlt
+  0x00007f697048cbf6: hlt
+  0x00007f697048cbf7: hlt
+  0x00007f697048cbf8: hlt
+  0x00007f697048cbf9: hlt
+  0x00007f697048cbfa: hlt
+  0x00007f697048cbfb: hlt
+  0x00007f697048cbfc: hlt
+  0x00007f697048cbfd: hlt
+  0x00007f697048cbfe: hlt
+  0x00007f697048cbff: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f697048cc00: jmpq    0x7f6968a78200    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f697048cc05: callq   0x7f697048cc0a
+  0x00007f697048cc0a: subq    $0x5,(%rsp)
+  0x00007f697048cc0f: jmpq    0x7f69689b35a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f697048cc14: hlt
+  0x00007f697048cc15: hlt
+  0x00007f697048cc16: hlt
+  0x00007f697048cc17: hlt
+
+ImmutableOopMap{rbp=NarrowOop }pc offsets: 184
+ImmutableOopMap{[0]=Oop }pc offsets: 200 216
+ImmutableOopMap{rbp=NarrowOop }pc offsets: 228 240
+ImmutableOopMap{}pc offsets: 252 264 276 288

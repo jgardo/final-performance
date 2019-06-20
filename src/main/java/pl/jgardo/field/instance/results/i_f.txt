@@ -1,0 +1,295 @@
+Compiled method (c1)    1453  652       3       pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f (9 bytes)
+ total in heap  [0x00007f37a503ba90,0x00007f37a503c058] = 1480
+ relocation     [0x00007f37a503bc08,0x00007f37a503bc48] = 64
+ main code      [0x00007f37a503bc60,0x00007f37a503be20] = 448
+ stub code      [0x00007f37a503be20,0x00007f37a503beb0] = 144
+ oops           [0x00007f37a503beb0,0x00007f37a503beb8] = 8
+ metadata       [0x00007f37a503beb8,0x00007f37a503bee0] = 40
+ scopes data    [0x00007f37a503bee0,0x00007f37a503bf40] = 96
+ scopes pcs     [0x00007f37a503bf40,0x00007f37a503c030] = 240
+ dependencies   [0x00007f37a503c030,0x00007f37a503c038] = 8
+ nul chk table  [0x00007f37a503c038,0x00007f37a503c058] = 32
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/field/instance/InstanceFieldBenchmark.f_f_f()D  [0x00007f37a503bc60, 0x00007f37a503beb0]  592 bytes
+Argument 0 is unknown.RIP: 0x7f37a503bc60 Code size: 0x00000250
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007f379499a140} 'f_f_f' '()D' in 'pl/jgardo/field/instance/InstanceFieldBenchmark'
+  #           [sp+0x60]  (sp of caller)
+  0x00007f37a503bc60: mov     0x8(%rsi),%r10d
+  0x00007f37a503bc64: shl     $0x3,%r10
+  0x00007f37a503bc68: movabs  $0x800000000,%r12
+  0x00007f37a503bc72: add     %r12,%r10
+  0x00007f37a503bc75: xor     %r12,%r12
+  0x00007f37a503bc78: cmp     %rax,%r10
+  0x00007f37a503bc7b: jne     0x7f37a49b1d00    ;   {runtime_call ic_miss_stub}
+  0x00007f37a503bc81: nopw    0x0(%rax,%rax)
+  0x00007f37a503bc8c: nop
+  0x00007f37a503bc90: nopw    0x0(%rax,%rax)
+  0x00007f37a503bc9b: nop
+  0x00007f37a503bc9f: nop
+[Verified Entry Point]
+  0x00007f37a503bca0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f37a503bca7: push    %rbp
+  0x00007f37a503bca8: sub     $0x50,%rsp
+  0x00007f37a503bcac: movabs  $0x7f37949d4e38,%rdi  ;   {metadata(method data for {method} {0x00007f379499a140} 'f_f_f' '()D' in 'pl/jgardo/field/instance/InstanceFieldBenchmark')}
+  0x00007f37a503bcb6: mov     0x104(%rdi),%ebx
+  0x00007f37a503bcbc: add     $0x8,%ebx
+  0x00007f37a503bcbf: mov     %ebx,0x104(%rdi)
+  0x00007f37a503bcc5: and     $0x1ff8,%ebx
+  0x00007f37a503bccb: cmp     $0x0,%ebx
+  0x00007f37a503bcce: je      0x7f37a503bd84    ;*aload_0 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@0 (line 64)
+
+  0x00007f37a503bcd4: mov     0x14(%rsi),%esi
+  0x00007f37a503bcd7: shl     $0x3,%rsi         ;*getfield objectHolderFinal {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@1 (line 64)
+
+  0x00007f37a503bcdb: cmp     (%rsi),%rax       ;*invokevirtual getXFromFinalListFinalPointAsArray {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ; implicit exception: dispatches to 0x00007f37a503bda5
+  0x00007f37a503bcde: mov     %rsi,%rdi
+  0x00007f37a503bce1: movabs  $0x7f37949d4e38,%rbx  ;   {metadata(method data for {method} {0x00007f379499a140} 'f_f_f' '()D' in 'pl/jgardo/field/instance/InstanceFieldBenchmark')}
+  0x00007f37a503bceb: movabs  $0x840093358,%r10  ;   {metadata('pl/jgardo/field/instance/ObjectHolder')}
+  0x00007f37a503bcf5: mov     %r10,0x150(%rbx)
+  0x00007f37a503bcfc: addq    $0x1,0x158(%rbx)
+  0x00007f37a503bd04: movabs  $0x7f37949d4ff0,%rdi  ;   {metadata(method data for {method} {0x00007f37949d48d0} 'getXFromFinalListFinalPointAsArray' '(I)D' in 'pl/jgardo/field/instance/ObjectHolder')}
+  0x00007f37a503bd0e: mov     0x104(%rdi),%ebx
+  0x00007f37a503bd14: add     $0x8,%ebx
+  0x00007f37a503bd17: mov     %ebx,0x104(%rdi)
+  0x00007f37a503bd1d: and     $0x7ffff8,%ebx
+  0x00007f37a503bd23: cmp     $0x0,%ebx
+  0x00007f37a503bd26: je      0x7f37a503bdaa
+  0x00007f37a503bd2c: mov     0x20(%rsi),%esi
+  0x00007f37a503bd2f: shl     $0x3,%rsi         ;*getfield finalPointFinalsAsArray {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@1 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37a503bd33: mov     0xc(%rsi),%edi    ; implicit exception: dispatches to 0x00007f37a503bdcb
+  0x00007f37a503bd36: cmp     $0x0,%edi
+  0x00007f37a503bd39: jbe     0x7f37a503bdd0
+  0x00007f37a503bd3f: mov     0x10(%rsi),%esi
+  0x00007f37a503bd42: shl     $0x3,%rsi         ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37a503bd46: cmp     (%rsi),%rax       ;*invokevirtual getX {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@6 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ; implicit exception: dispatches to 0x00007f37a503bde2
+  0x00007f37a503bd49: mov     %rsi,%rdi
+  0x00007f37a503bd4c: movabs  $0x7f37949d4ff0,%rbx  ;   {metadata(method data for {method} {0x00007f37949d48d0} 'getXFromFinalListFinalPointAsArray' '(I)D' in 'pl/jgardo/field/instance/ObjectHolder')}
+  0x00007f37a503bd56: movabs  $0x840093140,%r10  ;   {metadata('pl/jgardo/field/instance/PointFinal')}
+  0x00007f37a503bd60: mov     %r10,0x150(%rbx)
+  0x00007f37a503bd67: addq    $0x1,0x158(%rbx)
+  0x00007f37a503bd6f: vmovsd  0x10(%rsi),%xmm0  ;*getfield x {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.PointFinal::getX@1 (line 13)
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@6 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37a503bd74: add     $0x50,%rsp
+  0x00007f37a503bd78: pop     %rbp
+  0x00007f37a503bd79: mov     0x108(%r15),%r10
+  0x00007f37a503bd80: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f37a503bd83: retq
+  0x00007f37a503bd84: movabs  $0x7f379499a140,%r10  ;   {metadata({method} {0x00007f379499a140} 'f_f_f' '()D' in 'pl/jgardo/field/instance/InstanceFieldBenchmark')}
+  0x00007f37a503bd8e: mov     %r10,0x8(%rsp)
+  0x00007f37a503bd93: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f37a503bd9b: callq   0x7f37a4a7d780    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@-1 (line 64)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f37a503bda0: jmpq    0x7f37a503bcd4
+  0x00007f37a503bda5: callq   0x7f37a49ed9a0    ; ImmutableOopMap{rsi=Oop }
+                                                ;*invokevirtual getXFromFinalListFinalPointAsArray {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f37a503bdaa: movabs  $0x7f37949d48d0,%r10  ;   {metadata({method} {0x00007f37949d48d0} 'getXFromFinalListFinalPointAsArray' '(I)D' in 'pl/jgardo/field/instance/ObjectHolder')}
+  0x00007f37a503bdb4: mov     %r10,0x8(%rsp)
+  0x00007f37a503bdb9: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f37a503bdc1: callq   0x7f37a4a7d780    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@-1 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f37a503bdc6: jmpq    0x7f37a503bd2c
+  0x00007f37a503bdcb: callq   0x7f37a49ed9a0    ; ImmutableOopMap{rsi=Oop }
+                                                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f37a503bdd0: movq    $0x0,(%rsp)
+  0x00007f37a503bdd8: mov     %rsi,0x8(%rsp)
+  0x00007f37a503bddd: callq   0x7f37a49ee120    ; ImmutableOopMap{rsi=Oop }
+                                                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call throw_range_check_failed Runtime1 stub}
+  0x00007f37a503bde2: callq   0x7f37a49ed9a0    ; ImmutableOopMap{rsi=Oop }
+                                                ;*invokevirtual getX {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@6 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f37a503bde7: nop
+  0x00007f37a503bde8: nop
+  0x00007f37a503bde9: mov     0x420(%r15),%rax
+  0x00007f37a503bdf0: movabs  $0x0,%r10
+  0x00007f37a503bdfa: mov     %r10,0x420(%r15)
+  0x00007f37a503be01: movabs  $0x0,%r10
+  0x00007f37a503be0b: mov     %r10,0x428(%r15)
+  0x00007f37a503be12: add     $0x50,%rsp
+  0x00007f37a503be16: pop     %rbp
+  0x00007f37a503be17: jmpq    0x7f37a49eab00    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007f37a503be1c: hlt
+  0x00007f37a503be1d: hlt
+  0x00007f37a503be1e: hlt
+  0x00007f37a503be1f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f37a503be20: callq   0x7f37a49ebe80    ;   {no_reloc}
+  0x00007f37a503be25: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f37a503be2a: sub     $0x80,%rsp
+  0x00007f37a503be31: mov     %rax,0x78(%rsp)
+  0x00007f37a503be36: mov     %rcx,0x70(%rsp)
+  0x00007f37a503be3b: mov     %rdx,0x68(%rsp)
+  0x00007f37a503be40: mov     %rbx,0x60(%rsp)
+  0x00007f37a503be45: mov     %rbp,0x50(%rsp)
+  0x00007f37a503be4a: mov     %rsi,0x48(%rsp)
+  0x00007f37a503be4f: mov     %rdi,0x40(%rsp)
+  0x00007f37a503be54: mov     %r8,0x38(%rsp)
+  0x00007f37a503be59: mov     %r9,0x30(%rsp)
+  0x00007f37a503be5e: mov     %r10,0x28(%rsp)
+  0x00007f37a503be63: mov     %r11,0x20(%rsp)
+  0x00007f37a503be68: mov     %r12,0x18(%rsp)
+  0x00007f37a503be6d: mov     %r13,0x10(%rsp)
+  0x00007f37a503be72: mov     %r14,0x8(%rsp)
+  0x00007f37a503be77: mov     %r15,(%rsp)
+  0x00007f37a503be7b: movabs  $0x7f37c33f7022,%rdi  ;   {external_word}
+  0x00007f37a503be85: movabs  $0x7f37a503be25,%rsi  ;   {internal_word}
+  0x00007f37a503be8f: mov     %rsp,%rdx
+  0x00007f37a503be92: and     $0xfffffffffffffff0,%rsp
+  0x00007f37a503be96: callq   0x7f37c3003a80    ;   {runtime_call}
+  0x00007f37a503be9b: hlt
+[Deopt Handler Code]
+  0x00007f37a503be9c: movabs  $0x7f37a503be9c,%r10  ;   {section_word}
+  0x00007f37a503bea6: push    %r10
+  0x00007f37a503bea8: jmpq    0x7f37a49b35a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f37a503bead: hlt
+  0x00007f37a503beae: hlt
+  0x00007f37a503beaf: hlt
+
+ImmutableOopMap{rsi=Oop }pc offsets: 320 330 358 368 386 391 Compiled method (c2)    1506  662       4       pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f (9 bytes)
+ total in heap  [0x00007f37ac48e290,0x00007f37ac48e670] = 992
+ relocation     [0x00007f37ac48e408,0x00007f37ac48e420] = 24
+ main code      [0x00007f37ac48e420,0x00007f37ac48e4c0] = 160
+ stub code      [0x00007f37ac48e4c0,0x00007f37ac48e4d8] = 24
+ oops           [0x00007f37ac48e4d8,0x00007f37ac48e4e0] = 8
+ metadata       [0x00007f37ac48e4e0,0x00007f37ac48e4f8] = 24
+ scopes data    [0x00007f37ac48e4f8,0x00007f37ac48e558] = 96
+ scopes pcs     [0x00007f37ac48e558,0x00007f37ac48e648] = 240
+ dependencies   [0x00007f37ac48e648,0x00007f37ac48e650] = 8
+ nul chk table  [0x00007f37ac48e650,0x00007f37ac48e670] = 32
+----------------------------------------------------------------------
+pl/jgardo/field/instance/InstanceFieldBenchmark.f_f_f()D  [0x00007f37ac48e420, 0x00007f37ac48e4d8]  184 bytes
+Argument 0 is unknown.RIP: 0x7f37ac48e420 Code size: 0x000000b8
+[Entry Point]
+[Constants]
+  # {method} {0x00007f379499a140} 'f_f_f' '()D' in 'pl/jgardo/field/instance/InstanceFieldBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007f37ac48e420: mov     0x8(%rsi),%r10d
+  0x00007f37ac48e424: shl     $0x3,%r10
+  0x00007f37ac48e428: movabs  $0x800000000,%r12
+  0x00007f37ac48e432: add     %r12,%r10
+  0x00007f37ac48e435: xor     %r12,%r12
+  0x00007f37ac48e438: cmp     %r10,%rax
+  0x00007f37ac48e43b: jne     0x7f37a49b1d00    ;   {runtime_call ic_miss_stub}
+  0x00007f37ac48e441: nop
+  0x00007f37ac48e444: nopl    0x0(%rax,%rax)
+  0x00007f37ac48e44c: nop
+[Verified Entry Point]
+  0x00007f37ac48e450: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f37ac48e457: push    %rbp
+  0x00007f37ac48e458: sub     $0x10,%rsp        ;*synchronization entry
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@-1 (line 64)
+
+  0x00007f37ac48e45c: mov     0x14(%rsi),%r10d  ;*getfield objectHolderFinal {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@1 (line 64)
+
+  0x00007f37ac48e460: mov     0x20(%r12,%r10,8),%r10d  ;*getfield finalPointFinalsAsArray {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@1 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ; implicit exception: dispatches to 0x00007f37ac48e49a
+  0x00007f37ac48e465: mov     0xc(%r12,%r10,8),%r8d  ; implicit exception: dispatches to 0x00007f37ac48e4a6
+  0x00007f37ac48e46a: test    %r8d,%r8d
+  0x00007f37ac48e46d: jbe     0x7f37ac48e48b
+  0x00007f37ac48e46f: mov     0x10(%r12,%r10,8),%r11d  ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37ac48e474: vmovsd  0x10(%r12,%r11,8),%xmm0  ;*getfield x {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.PointFinal::getX@1 (line 13)
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@6 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ; implicit exception: dispatches to 0x00007f37ac48e4b2
+  0x00007f37ac48e47b: add     $0x10,%rsp
+  0x00007f37ac48e47f: pop     %rbp
+  0x00007f37ac48e480: mov     0x108(%r15),%r10
+  0x00007f37ac48e487: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f37ac48e48a: retq
+  0x00007f37ac48e48b: mov     $0xffffffe4,%esi
+  0x00007f37ac48e490: mov     %r10d,%ebp
+  0x00007f37ac48e493: callq   0x7f37a49b3980    ; ImmutableOopMap{rbp=NarrowOop }
+                                                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f37ac48e498: ud2                       ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37ac48e49a: mov     $0xfffffff6,%esi
+  0x00007f37ac48e49f: callq   0x7f37a49b3980    ; ImmutableOopMap{}
+                                                ;*invokevirtual getXFromFinalListFinalPointAsArray {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f37ac48e4a4: ud2                       ;*invokevirtual getXFromFinalListFinalPointAsArray {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37ac48e4a6: mov     $0xfffffff6,%esi
+  0x00007f37ac48e4ab: callq   0x7f37a49b3980    ; ImmutableOopMap{}
+                                                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f37ac48e4b0: ud2                       ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@5 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37ac48e4b2: mov     $0xfffffff6,%esi
+  0x00007f37ac48e4b7: callq   0x7f37a49b3980    ; ImmutableOopMap{}
+                                                ;*invokevirtual getX {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@6 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f37ac48e4bc: ud2                       ;*invokevirtual getX {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.instance.ObjectHolder::getXFromFinalListFinalPointAsArray@6 (line 40)
+                                                ; - pl.jgardo.field.instance.InstanceFieldBenchmark::f_f_f@5 (line 64)
+
+  0x00007f37ac48e4be: hlt
+  0x00007f37ac48e4bf: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f37ac48e4c0: jmpq    0x7f37a49eb480    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f37ac48e4c5: callq   0x7f37ac48e4ca
+  0x00007f37ac48e4ca: subq    $0x5,(%rsp)
+  0x00007f37ac48e4cf: jmpq    0x7f37a49b35a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f37ac48e4d4: hlt
+  0x00007f37ac48e4d5: hlt
+  0x00007f37ac48e4d6: hlt
+  0x00007f37ac48e4d7: hlt
+
+ImmutableOopMap{rbp=NarrowOop }pc offsets: 120 
+ImmutableOopMap{}pc offsets: 132 144 156

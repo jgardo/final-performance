@@ -1,0 +1,9 @@
+[Verified Entry Point]
+sub     $0x18,%rsp
+mov     %rbp,0x10(%rsp)   ;*synchronization entry
+mov     $0x2,%eax
+add     $0x10,%rsp
+pop     %rbp
+mov     0x108(%r15),%r10
+test    %eax,(%r10)       ;   {poll_return}
+retq

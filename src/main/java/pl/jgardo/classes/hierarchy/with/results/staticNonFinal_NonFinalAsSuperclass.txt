@@ -1,0 +1,247 @@
+Compiled method (c1)     628  645       3       pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass (7 bytes)
+ total in heap  [0x00007ff370caa490,0x00007ff370caa960] = 1232
+ relocation     [0x00007ff370caa608,0x00007ff370caa648] = 64
+ main code      [0x00007ff370caa660,0x00007ff370caa800] = 416
+ stub code      [0x00007ff370caa800,0x00007ff370caa8a8] = 168
+ oops           [0x00007ff370caa8a8,0x00007ff370caa8b0] = 8
+ metadata       [0x00007ff370caa8b0,0x00007ff370caa8b8] = 8
+ scopes data    [0x00007ff370caa8b8,0x00007ff370caa8d8] = 32
+ scopes pcs     [0x00007ff370caa8d8,0x00007ff370caa948] = 112
+ dependencies   [0x00007ff370caa948,0x00007ff370caa950] = 8
+ nul chk table  [0x00007ff370caa950,0x00007ff370caa960] = 16
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark.NonFinalAsSuperclass()I  [0x00007ff370caa660, 0x00007ff370caa8a8]  584 bytes
+Argument 0 is unknown.RIP: 0x7ff370caa660 Code size: 0x00000248
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007ff353fe9ba0} 'NonFinalAsSuperclass' '()I' in 'pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark'
+  #           [sp+0x40]  (sp of caller)
+  0x00007ff370caa660: mov     0x8(%rsi),%r10d
+  0x00007ff370caa664: movabs  $0x800000000,%r12
+  0x00007ff370caa66e: add     %r12,%r10
+  0x00007ff370caa671: xor     %r12,%r12
+  0x00007ff370caa674: cmp     %rax,%r10
+  0x00007ff370caa677: jne     0x7ff370631c00    ;   {runtime_call ic_miss_stub}
+  0x00007ff370caa67d: nop
+[Verified Entry Point]
+  0x00007ff370caa680: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007ff370caa687: push    %rbp
+  0x00007ff370caa688: sub     $0x30,%rsp
+  0x00007ff370caa68c: movabs  $0x7ff351971ca0,%rdi  ;   {metadata(method data for {method} {0x00007ff353fe9ba0} 'NonFinalAsSuperclass' '()I' in 'pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark')}
+  0x00007ff370caa696: mov     0x104(%rdi),%ebx
+  0x00007ff370caa69c: add     $0x8,%ebx
+  0x00007ff370caa69f: mov     %ebx,0x104(%rdi)
+  0x00007ff370caa6a5: and     $0x1ff8,%ebx
+  0x00007ff370caa6ab: cmp     $0x0,%ebx
+  0x00007ff370caa6ae: je      0x7ff370caa78c
+  0x00007ff370caa6b4: movabs  $0x716326060,%rsi  ;   {oop(a 'java/lang/Class'{0x0000000716326060} = 'pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark')}
+  0x00007ff370caa6be: mov     0x84(%rsi),%esi
+  0x00007ff370caa6c4: shl     $0x3,%rsi         ;*getstatic STATIC_NON_FINAL_CLASS_AS_SUPERCLASS {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@0 (line 51)
+
+  0x00007ff370caa6c8: cmp     (%rsi),%rax       ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@3 (line 51)
+                                                ; implicit exception: dispatches to 0x00007ff370caa7ad
+  0x00007ff370caa6cb: mov     %rsi,%rdi
+  0x00007ff370caa6ce: movabs  $0x7ff351971ca0,%rbx  ;   {metadata(method data for {method} {0x00007ff353fe9ba0} 'NonFinalAsSuperclass' '()I' in 'pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark')}
+  0x00007ff370caa6d8: mov     0x8(%rdi),%edi
+  0x00007ff370caa6db: movabs  $0x800000000,%r12
+  0x00007ff370caa6e5: add     %r12,%rdi
+  0x00007ff370caa6e8: xor     %r12,%r12
+  0x00007ff370caa6eb: cmp     0x150(%rbx),%rdi
+  0x00007ff370caa6f2: jne     0x7ff370caa701
+  0x00007ff370caa6f4: addq    $0x1,0x158(%rbx)
+  0x00007ff370caa6fc: jmpq    0x7ff370caa767
+  0x00007ff370caa701: cmp     0x160(%rbx),%rdi
+  0x00007ff370caa708: jne     0x7ff370caa717
+  0x00007ff370caa70a: addq    $0x1,0x168(%rbx)
+  0x00007ff370caa712: jmpq    0x7ff370caa767
+  0x00007ff370caa717: cmpq    $0x0,0x150(%rbx)
+  0x00007ff370caa722: jne     0x7ff370caa73b
+  0x00007ff370caa724: mov     %rdi,0x150(%rbx)
+  0x00007ff370caa72b: movq    $0x1,0x158(%rbx)
+  0x00007ff370caa736: jmpq    0x7ff370caa767
+  0x00007ff370caa73b: cmpq    $0x0,0x160(%rbx)
+  0x00007ff370caa746: jne     0x7ff370caa75f
+  0x00007ff370caa748: mov     %rdi,0x160(%rbx)
+  0x00007ff370caa74f: movq    $0x1,0x168(%rbx)
+  0x00007ff370caa75a: jmpq    0x7ff370caa767
+  0x00007ff370caa75f: addq    $0x1,0x140(%rbx)
+  0x00007ff370caa767: nopw    0x0(%rax,%rax)
+  0x00007ff370caa76d: movabs  $0x8000eb560,%rax
+  0x00007ff370caa777: callq   0x7ff37810ce40    ; ImmutableOopMap{}
+                                                ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@3 (line 51)
+                                                ;   {virtual_call}
+  0x00007ff370caa77c: add     $0x30,%rsp
+  0x00007ff370caa780: pop     %rbp
+  0x00007ff370caa781: mov     0x108(%r15),%r10
+  0x00007ff370caa788: test    %eax,(%r10)       ;   {poll_return}
+  0x00007ff370caa78b: retq
+  0x00007ff370caa78c: movabs  $0x7ff353fe9ba0,%r10  ;   {metadata({method} {0x00007ff353fe9ba0} 'NonFinalAsSuperclass' '()I' in 'pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark')}
+  0x00007ff370caa796: mov     %r10,0x8(%rsp)
+  0x00007ff370caa79b: movq    $0xffffffffffffffff,(%rsp)
+  0x00007ff370caa7a3: callq   0x7ff3706fa380    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@-1 (line 51)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007ff370caa7a8: jmpq    0x7ff370caa6b4
+  0x00007ff370caa7ad: callq   0x7ff3706f5aa0    ; ImmutableOopMap{rsi=Oop }
+                                                ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@3 (line 51)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007ff370caa7b2: nop
+  0x00007ff370caa7b3: nop
+  0x00007ff370caa7b4: mov     0x420(%r15),%rax
+  0x00007ff370caa7bb: movabs  $0x0,%r10
+  0x00007ff370caa7c5: mov     %r10,0x420(%r15)
+  0x00007ff370caa7cc: movabs  $0x0,%r10
+  0x00007ff370caa7d6: mov     %r10,0x428(%r15)
+  0x00007ff370caa7dd: add     $0x30,%rsp
+  0x00007ff370caa7e1: pop     %rbp
+  0x00007ff370caa7e2: jmpq    0x7ff370668280    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007ff370caa7e7: hlt
+  0x00007ff370caa7e8: hlt
+  0x00007ff370caa7e9: hlt
+  0x00007ff370caa7ea: hlt
+  0x00007ff370caa7eb: hlt
+  0x00007ff370caa7ec: hlt
+  0x00007ff370caa7ed: hlt
+  0x00007ff370caa7ee: hlt
+  0x00007ff370caa7ef: hlt
+  0x00007ff370caa7f0: hlt
+  0x00007ff370caa7f1: hlt
+  0x00007ff370caa7f2: hlt
+  0x00007ff370caa7f3: hlt
+  0x00007ff370caa7f4: hlt
+  0x00007ff370caa7f5: hlt
+  0x00007ff370caa7f6: hlt
+  0x00007ff370caa7f7: hlt
+  0x00007ff370caa7f8: hlt
+  0x00007ff370caa7f9: hlt
+  0x00007ff370caa7fa: hlt
+  0x00007ff370caa7fb: hlt
+  0x00007ff370caa7fc: hlt
+  0x00007ff370caa7fd: hlt
+  0x00007ff370caa7fe: hlt
+  0x00007ff370caa7ff: hlt
+[Stub Code]
+  0x00007ff370caa800: nopl    0x0(%rax,%rax)    ;   {no_reloc}
+  0x00007ff370caa805: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007ff370caa80f: jmpq    0x7ff370caa80f    ;   {runtime_call}
+[Exception Handler]
+  0x00007ff370caa814: callq   0x7ff3706f7680    ;   {runtime_call handle_exception_from_callee Runtime1 stub}
+  0x00007ff370caa819: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007ff370caa81e: sub     $0x80,%rsp
+  0x00007ff370caa825: mov     %rax,0x78(%rsp)
+  0x00007ff370caa82a: mov     %rcx,0x70(%rsp)
+  0x00007ff370caa82f: mov     %rdx,0x68(%rsp)
+  0x00007ff370caa834: mov     %rbx,0x60(%rsp)
+  0x00007ff370caa839: mov     %rbp,0x50(%rsp)
+  0x00007ff370caa83e: mov     %rsi,0x48(%rsp)
+  0x00007ff370caa843: mov     %rdi,0x40(%rsp)
+  0x00007ff370caa848: mov     %r8,0x38(%rsp)
+  0x00007ff370caa84d: mov     %r9,0x30(%rsp)
+  0x00007ff370caa852: mov     %r10,0x28(%rsp)
+  0x00007ff370caa857: mov     %r11,0x20(%rsp)
+  0x00007ff370caa85c: mov     %r12,0x18(%rsp)
+  0x00007ff370caa861: mov     %r13,0x10(%rsp)
+  0x00007ff370caa866: mov     %r14,0x8(%rsp)
+  0x00007ff370caa86b: mov     %r15,(%rsp)
+  0x00007ff370caa86f: movabs  $0x7ff38e21fe9e,%rdi  ;   {external_word}
+  0x00007ff370caa879: movabs  $0x7ff370caa819,%rsi  ;   {internal_word}
+  0x00007ff370caa883: mov     %rsp,%rdx
+  0x00007ff370caa886: and     $0xfffffffffffffff0,%rsp
+  0x00007ff370caa88a: callq   0x7ff38de280f0    ;   {runtime_call MacroAssembler::debug64(char*, long, long*)}
+  0x00007ff370caa88f: hlt
+[Deopt Handler Code]
+  0x00007ff370caa890: movabs  $0x7ff370caa890,%r10  ;   {section_word}
+  0x00007ff370caa89a: push    %r10
+  0x00007ff370caa89c: jmpq    0x7ff3706334a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007ff370caa8a1: hlt
+  0x00007ff370caa8a2: hlt
+  0x00007ff370caa8a3: hlt
+  0x00007ff370caa8a4: hlt
+  0x00007ff370caa8a5: hlt
+  0x00007ff370caa8a6: hlt
+  0x00007ff370caa8a7: hlt
+
+ImmutableOopMap{}pc offsets: 284
+ImmutableOopMap{rsi=Oop }pc offsets: 328 338 Compiled method (c2)     645  649       4       pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass (7 bytes)
+ total in heap  [0x00007ff37810d210,0x00007ff37810d508] = 760
+ relocation     [0x00007ff37810d388,0x00007ff37810d3a0] = 24
+ main code      [0x00007ff37810d3a0,0x00007ff37810d420] = 128
+ stub code      [0x00007ff37810d420,0x00007ff37810d438] = 24
+ oops           [0x00007ff37810d438,0x00007ff37810d440] = 8
+ metadata       [0x00007ff37810d440,0x00007ff37810d450] = 16
+ scopes data    [0x00007ff37810d450,0x00007ff37810d480] = 48
+ scopes pcs     [0x00007ff37810d480,0x00007ff37810d4f0] = 112
+ dependencies   [0x00007ff37810d4f0,0x00007ff37810d4f8] = 8
+ nul chk table  [0x00007ff37810d4f8,0x00007ff37810d508] = 16
+----------------------------------------------------------------------
+pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark.NonFinalAsSuperclass()I  [0x00007ff37810d3a0, 0x00007ff37810d438]  152 bytes
+Argument 0 is unknown.RIP: 0x7ff37810d3a0 Code size: 0x00000098
+[Entry Point]
+[Constants]
+  # {method} {0x00007ff353fe9ba0} 'NonFinalAsSuperclass' '()I' in 'pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007ff37810d3a0: mov     0x8(%rsi),%r10d
+  0x00007ff37810d3a4: movabs  $0x800000000,%r12
+  0x00007ff37810d3ae: add     %r12,%r10
+  0x00007ff37810d3b1: xor     %r12,%r12
+  0x00007ff37810d3b4: cmp     %r10,%rax
+  0x00007ff37810d3b7: jne     0x7ff370631c00    ;   {runtime_call ic_miss_stub}
+  0x00007ff37810d3bd: nop
+[Verified Entry Point]
+  0x00007ff37810d3c0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007ff37810d3c7: push    %rbp
+  0x00007ff37810d3c8: sub     $0x10,%rsp        ;*synchronization entry
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@-1 (line 51)
+
+  0x00007ff37810d3cc: movabs  $0x716326060,%r10  ;   {oop(a 'java/lang/Class'{0x0000000716326060} = 'pl/jgardo/classes/hierarchy/with/NonfinalClassWithHierarchyBenchmark')}
+  0x00007ff37810d3d6: mov     0x84(%r10),%r11d  ;*getstatic STATIC_NON_FINAL_CLASS_AS_SUPERCLASS {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@0 (line 51)
+
+  0x00007ff37810d3dd: mov     0x8(%r12,%r11,8),%r10d  ; implicit exception: dispatches to 0x00007ff37810d412
+  0x00007ff37810d3e2: cmp     $0xeb560,%r10d    ;   {metadata('pl/jgardo/classes/hierarchy/with/NonFinalClass')}
+  0x00007ff37810d3e9: jne     0x7ff37810d400
+  0x00007ff37810d3eb: mov     $0x5,%eax
+  0x00007ff37810d3f0: add     $0x10,%rsp
+  0x00007ff37810d3f4: pop     %rbp
+  0x00007ff37810d3f5: mov     0x108(%r15),%r10
+  0x00007ff37810d3fc: test    %eax,(%r10)       ;   {poll_return}
+  0x00007ff37810d3ff: retq
+  0x00007ff37810d400: mov     $0xffffffde,%esi
+  0x00007ff37810d405: mov     %r11d,%ebp
+  0x00007ff37810d408: nop
+  0x00007ff37810d40b: callq   0x7ff370633880    ; ImmutableOopMap{rbp=NarrowOop }
+                                                ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@3 (line 51)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007ff37810d410: ud2
+  0x00007ff37810d412: mov     $0xfffffff6,%esi
+  0x00007ff37810d417: callq   0x7ff370633880    ; ImmutableOopMap{}
+                                                ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@3 (line 51)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007ff37810d41c: ud2                       ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.classes.hierarchy.with.NonfinalClassWithHierarchyBenchmark::NonFinalAsSuperclass@3 (line 51)
+
+  0x00007ff37810d41e: hlt
+  0x00007ff37810d41f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007ff37810d420: jmpq    0x7ff3706f5380    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007ff37810d425: callq   0x7ff37810d42a
+  0x00007ff37810d42a: subq    $0x5,(%rsp)
+  0x00007ff37810d42f: jmpq    0x7ff3706334a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007ff37810d434: hlt
+  0x00007ff37810d435: hlt
+  0x00007ff37810d436: hlt
+  0x00007ff37810d437: hlt
+
+ImmutableOopMap{rbp=NarrowOop }pc offsets: 112
+ImmutableOopMap{}pc offsets: 124 188192161,806 ops/s

@@ -1,0 +1,14 @@
+[Verified Entry Point]
+mov     %eax,0xfffffffffffec000(%rsp)
+push    %rbp
+sub     $0x20,%rsp        ;*synchronization entry
+mov     0x10(%rsi),%r10d  ;*getfield stateHolderFinal {reexecute=0 rethrow=0 return_oop=0}
+movzbl  0xc(%r12,%r10,8),%r8d  ;*getfield featureOn {reexecute=0 rethrow=0 return_oop=0}
+test    %r8d,%r8d
+je      0x7f65e3a46c00    ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+mov     $0x2,%eax
+add     $0x20,%rsp
+pop     %rbp
+mov     0x108(%r15),%r10
+test    %eax,(%r10)       ;   {poll_return}
+retq

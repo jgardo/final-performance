@@ -1,0 +1,298 @@
+Compiled method (c1)     532  641       3       pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals (30 bytes)
+ total in heap  [0x00007f73f4a9f290,0x00007f73f4a9f758] = 1224
+ relocation     [0x00007f73f4a9f408,0x00007f73f4a9f440] = 56
+ main code      [0x00007f73f4a9f440,0x00007f73f4a9f5c0] = 384
+ stub code      [0x00007f73f4a9f5c0,0x00007f73f4a9f650] = 144
+ oops           [0x00007f73f4a9f650,0x00007f73f4a9f658] = 8
+ metadata       [0x00007f73f4a9f658,0x00007f73f4a9f660] = 8
+ scopes data    [0x00007f73f4a9f660,0x00007f73f4a9f6a0] = 64
+ scopes pcs     [0x00007f73f4a9f6a0,0x00007f73f4a9f750] = 176
+ dependencies   [0x00007f73f4a9f750,0x00007f73f4a9f758] = 8
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.stupidLoopWithoutFinals()I  [0x00007f73f4a9f440, 0x00007f73f4a9f650]  528 bytes
+Argument 0 is unknown.RIP: 0x7f73f4a9f440 Code size: 0x00000210
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0x40]  (sp of caller)
+  0x00007f73f4a9f440: mov     0x8(%rsi),%r10d
+  0x00007f73f4a9f444: movabs  $0x800000000,%r12
+  0x00007f73f4a9f44e: add     %r12,%r10
+  0x00007f73f4a9f451: xor     %r12,%r12
+  0x00007f73f4a9f454: cmp     %rax,%r10
+  0x00007f73f4a9f457: jne     0x7f73f4417c00    ;   {runtime_call ic_miss_stub}
+  0x00007f73f4a9f45d: nop
+[Verified Entry Point]
+  0x00007f73f4a9f460: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f73f4a9f467: push    %rbp
+  0x00007f73f4a9f468: sub     $0x30,%rsp
+  0x00007f73f4a9f46c: movabs  $0x7f73d5871198,%rax  ;   {metadata(method data for {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f73f4a9f476: mov     0x104(%rax),%edi
+  0x00007f73f4a9f47c: add     $0x8,%edi
+  0x00007f73f4a9f47f: mov     %edi,0x104(%rax)
+  0x00007f73f4a9f485: and     $0x1ff8,%edi
+  0x00007f73f4a9f48b: cmp     $0x0,%edi
+  0x00007f73f4a9f48e: je      0x7f73f4a9f545    ;*iconst_1 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@0 (line 87)
+
+  0x00007f73f4a9f494: mov     $0x1,%eax
+  0x00007f73f4a9f499: jmpq    0x7f73f4a9f4f7    ;*iload_1 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@2 (line 88)
+
+  0x00007f73f4a9f49e: nop
+  0x00007f73f4a9f4a0: movabs  $0x7f73d5871198,%rax  ;   {metadata(method data for {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f73f4a9f4aa: incl    0x160(%rax)       ;*if_icmpne {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@16 (line 91)
+
+  0x00007f73f4a9f4b0: movabs  $0x7f73d5871198,%rax  ;   {metadata(method data for {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f73f4a9f4ba: mov     0x108(%rax),%esi
+  0x00007f73f4a9f4c0: add     $0x8,%esi
+  0x00007f73f4a9f4c3: mov     %esi,0x108(%rax)
+  0x00007f73f4a9f4c9: and     $0xfff8,%esi
+  0x00007f73f4a9f4cf: cmp     $0x0,%esi
+  0x00007f73f4a9f4d2: je      0x7f73f4a9f566    ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@25 (line 92)
+
+  0x00007f73f4a9f4d8: mov     0x108(%r15),%r10  ; ImmutableOopMap{}
+                                                ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@25 (line 92)
+
+  0x00007f73f4a9f4df: test    %eax,(%r10)       ;   {poll}
+  0x00007f73f4a9f4e2: movabs  $0x7f73d5871198,%rax  ;   {metadata(method data for {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f73f4a9f4ec: incl    0x198(%rax)
+  0x00007f73f4a9f4f2: mov     $0x0,%eax         ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@25 (line 92)
+
+  0x00007f73f4a9f4f7: cmp     $0x0,%eax
+  0x00007f73f4a9f4fa: movabs  $0x7f73d5871198,%rax  ;   {metadata(method data for {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f73f4a9f504: movabs  $0x150,%rsi
+  0x00007f73f4a9f50e: jne     0x7f73f4a9f51e
+  0x00007f73f4a9f514: movabs  $0x140,%rsi
+  0x00007f73f4a9f51e: mov     (%rax,%rsi),%rdi
+  0x00007f73f4a9f522: lea     0x1(%rdi),%rdi
+  0x00007f73f4a9f526: mov     %rdi,(%rax,%rsi)
+  0x00007f73f4a9f52a: jne     0x7f73f4a9f4a0    ;*ifeq {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@3 (line 88)
+
+  0x00007f73f4a9f530: mov     $0x1,%eax
+  0x00007f73f4a9f535: add     $0x30,%rsp
+  0x00007f73f4a9f539: pop     %rbp
+  0x00007f73f4a9f53a: mov     0x108(%r15),%r10
+  0x00007f73f4a9f541: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f73f4a9f544: retq
+  0x00007f73f4a9f545: movabs  $0x7f73d7ffa060,%r10  ;   {metadata({method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f73f4a9f54f: mov     %r10,0x8(%rsp)
+  0x00007f73f4a9f554: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f73f4a9f55c: callq   0x7f73f44e1880    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@-1 (line 87)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f73f4a9f561: jmpq    0x7f73f4a9f494
+  0x00007f73f4a9f566: movabs  $0x7f73d7ffa060,%r10  ;   {metadata({method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007f73f4a9f570: mov     %r10,0x8(%rsp)
+  0x00007f73f4a9f575: movq    $0x19,(%rsp)
+  0x00007f73f4a9f57d: callq   0x7f73f44e1880    ; ImmutableOopMap{}
+                                                ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@25 (line 92)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f73f4a9f582: jmpq    0x7f73f4a9f4d8
+  0x00007f73f4a9f587: nop
+  0x00007f73f4a9f588: nop
+  0x00007f73f4a9f589: mov     0x420(%r15),%rax
+  0x00007f73f4a9f590: movabs  $0x0,%r10
+  0x00007f73f4a9f59a: mov     %r10,0x420(%r15)
+  0x00007f73f4a9f5a1: movabs  $0x0,%r10
+  0x00007f73f4a9f5ab: mov     %r10,0x428(%r15)
+  0x00007f73f4a9f5b2: add     $0x30,%rsp
+  0x00007f73f4a9f5b6: pop     %rbp
+  0x00007f73f4a9f5b7: jmpq    0x7f73f444e280    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007f73f4a9f5bc: hlt
+  0x00007f73f4a9f5bd: hlt
+  0x00007f73f4a9f5be: hlt
+  0x00007f73f4a9f5bf: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f73f4a9f5c0: callq   0x7f73f44dd680    ;   {no_reloc}
+  0x00007f73f4a9f5c5: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f73f4a9f5ca: sub     $0x80,%rsp
+  0x00007f73f4a9f5d1: mov     %rax,0x78(%rsp)
+  0x00007f73f4a9f5d6: mov     %rcx,0x70(%rsp)
+  0x00007f73f4a9f5db: mov     %rdx,0x68(%rsp)
+  0x00007f73f4a9f5e0: mov     %rbx,0x60(%rsp)
+  0x00007f73f4a9f5e5: mov     %rbp,0x50(%rsp)
+  0x00007f73f4a9f5ea: mov     %rsi,0x48(%rsp)
+  0x00007f73f4a9f5ef: mov     %rdi,0x40(%rsp)
+  0x00007f73f4a9f5f4: mov     %r8,0x38(%rsp)
+  0x00007f73f4a9f5f9: mov     %r9,0x30(%rsp)
+  0x00007f73f4a9f5fe: mov     %r10,0x28(%rsp)
+  0x00007f73f4a9f603: mov     %r11,0x20(%rsp)
+  0x00007f73f4a9f608: mov     %r12,0x18(%rsp)
+  0x00007f73f4a9f60d: mov     %r13,0x10(%rsp)
+  0x00007f73f4a9f612: mov     %r14,0x8(%rsp)
+  0x00007f73f4a9f617: mov     %r15,(%rsp)
+  0x00007f73f4a9f61b: movabs  $0x7f7412088e9e,%rdi  ;   {external_word}
+  0x00007f73f4a9f625: movabs  $0x7f73f4a9f5c5,%rsi  ;   {internal_word}
+  0x00007f73f4a9f62f: mov     %rsp,%rdx
+  0x00007f73f4a9f632: and     $0xfffffffffffffff0,%rsp
+  0x00007f73f4a9f636: callq   0x7f7411c910f0    ;   {runtime_call MacroAssembler::debug64(char*, long, long*)}
+  0x00007f73f4a9f63b: hlt
+[Deopt Handler Code]
+  0x00007f73f4a9f63c: movabs  $0x7f73f4a9f63c,%r10  ;   {section_word}
+  0x00007f73f4a9f646: push    %r10
+  0x00007f73f4a9f648: jmpq    0x7f73f44194a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f73f4a9f64d: hlt
+  0x00007f73f4a9f64e: hlt
+  0x00007f73f4a9f64f: hlt
+
+ImmutableOopMap{}pc offsets: 159
+ImmutableOopMap{rsi=Oop }pc offsets: 289
+ImmutableOopMap{}pc offsets: 322 Compiled method (c2)     545  645       4       pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals (30 bytes)
+ total in heap  [0x00007f73fbef1f10,0x00007f73fbef2168] = 600
+ relocation     [0x00007f73fbef2088,0x00007f73fbef2098] = 16
+ main code      [0x00007f73fbef20a0,0x00007f73fbef2100] = 96
+ stub code      [0x00007f73fbef2100,0x00007f73fbef2118] = 24
+ oops           [0x00007f73fbef2118,0x00007f73fbef2120] = 8
+ metadata       [0x00007f73fbef2120,0x00007f73fbef2128] = 8
+ scopes data    [0x00007f73fbef2128,0x00007f73fbef2130] = 8
+ scopes pcs     [0x00007f73fbef2130,0x00007f73fbef2160] = 48
+ dependencies   [0x00007f73fbef2160,0x00007f73fbef2168] = 8
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.stupidLoopWithoutFinals()I  [0x00007f73fbef20a0, 0x00007f73fbef2118]  120 bytes
+Argument 0 is unknown.RIP: 0x7f73fbef20a0 Code size: 0x00000078
+[Entry Point]
+[Constants]
+  # {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007f73fbef20a0: mov     0x8(%rsi),%r10d
+  0x00007f73fbef20a4: movabs  $0x800000000,%r12
+  0x00007f73fbef20ae: add     %r12,%r10
+  0x00007f73fbef20b1: xor     %r12,%r12
+  0x00007f73fbef20b4: cmp     %r10,%rax
+  0x00007f73fbef20b7: jne     0x7f73f4417c00    ;   {runtime_call ic_miss_stub}
+  0x00007f73fbef20bd: nop
+[Verified Entry Point]
+  0x00007f73fbef20c0: sub     $0x18,%rsp
+  0x00007f73fbef20c7: mov     %rbp,0x10(%rsp)   ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@-1 (line 87)
+
+  0x00007f73fbef20cc: mov     $0x1,%eax
+  0x00007f73fbef20d1: add     $0x10,%rsp
+  0x00007f73fbef20d5: pop     %rbp
+  0x00007f73fbef20d6: mov     0x108(%r15),%r10
+  0x00007f73fbef20dd: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f73fbef20e0: retq
+  0x00007f73fbef20e1: hlt
+  0x00007f73fbef20e2: hlt
+  0x00007f73fbef20e3: hlt
+  0x00007f73fbef20e4: hlt
+  0x00007f73fbef20e5: hlt
+  0x00007f73fbef20e6: hlt
+  0x00007f73fbef20e7: hlt
+  0x00007f73fbef20e8: hlt
+  0x00007f73fbef20e9: hlt
+  0x00007f73fbef20ea: hlt
+  0x00007f73fbef20eb: hlt
+  0x00007f73fbef20ec: hlt
+  0x00007f73fbef20ed: hlt
+  0x00007f73fbef20ee: hlt
+  0x00007f73fbef20ef: hlt
+  0x00007f73fbef20f0: hlt
+  0x00007f73fbef20f1: hlt
+  0x00007f73fbef20f2: hlt
+  0x00007f73fbef20f3: hlt
+  0x00007f73fbef20f4: hlt
+  0x00007f73fbef20f5: hlt
+  0x00007f73fbef20f6: hlt
+  0x00007f73fbef20f7: hlt
+  0x00007f73fbef20f8: hlt
+  0x00007f73fbef20f9: hlt
+  0x00007f73fbef20fa: hlt
+  0x00007f73fbef20fb: hlt
+  0x00007f73fbef20fc: hlt
+  0x00007f73fbef20fd: hlt
+  0x00007f73fbef20fe: hlt
+  0x00007f73fbef20ff: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f73fbef2100: jmpq    0x7f73f444e600    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f73fbef2105: callq   0x7f73fbef210a
+  0x00007f73fbef210a: subq    $0x5,(%rsp)
+  0x00007f73fbef210f: jmpq    0x7f73f44194a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f73fbef2114: hlt
+  0x00007f73fbef2115: hlt
+  0x00007f73fbef2116: hlt
+  0x00007f73fbef2117: hlt
+Compiled method (c2)     568  649 %     4       pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals @ 2 (30 bytes)
+ total in heap  [0x00007f73fbef2190,0x00007f73fbef2430] = 672
+ relocation     [0x00007f73fbef2308,0x00007f73fbef2318] = 16
+ main code      [0x00007f73fbef2320,0x00007f73fbef2380] = 96
+ stub code      [0x00007f73fbef2380,0x00007f73fbef2398] = 24
+ oops           [0x00007f73fbef2398,0x00007f73fbef23a0] = 8
+ metadata       [0x00007f73fbef23a0,0x00007f73fbef23a8] = 8
+ scopes data    [0x00007f73fbef23a8,0x00007f73fbef23c8] = 32
+ scopes pcs     [0x00007f73fbef23c8,0x00007f73fbef2428] = 96
+ dependencies   [0x00007f73fbef2428,0x00007f73fbef2430] = 8
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.stupidLoopWithoutFinals()I  [0x00007f73fbef2320, 0x00007f73fbef2398]  120 bytes
+Argument 0 is unknown.RIP: 0x7f73fbef2320 Code size: 0x00000078
+[Entry Point]
+[Verified Entry Point]
+[Constants]
+  # {method} {0x00007f73d7ffa060} 'stupidLoopWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark'
+  0x00007f73fbef2320: callq   0x7f7411dba160    ;   {runtime_call os::breakpoint()}
+  0x00007f73fbef2325: nopw    0x0(%rax,%rax)
+  0x00007f73fbef2330: sub     $0x18,%rsp
+  0x00007f73fbef2337: mov     %rbp,0x10(%rsp)
+  0x00007f73fbef233c: mov     0x10(%rsi),%ebp
+  0x00007f73fbef233f: mov     %rsi,%rdi
+  0x00007f73fbef2342: movabs  $0x7f7411e9dd10,%r10
+  0x00007f73fbef234c: callq   %r10              ;*iload_1 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@2 (line 88)
+
+  0x00007f73fbef234f: test    %ebp,%ebp
+  0x00007f73fbef2351: je      0x7f73fbef235d    ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@25 (line 92)
+
+  0x00007f73fbef2353: mov     0x108(%r15),%r10  ; ImmutableOopMap{}
+                                                ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@25 (line 92)
+
+  0x00007f73fbef235a: test    %eax,(%r10)       ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::stupidLoopWithoutFinals@25 (line 92)
+                                                ;   {poll}
+  0x00007f73fbef235d: mov     $0x1,%eax
+  0x00007f73fbef2362: add     $0x10,%rsp
+  0x00007f73fbef2366: pop     %rbp
+  0x00007f73fbef2367: mov     0x108(%r15),%r10
+  0x00007f73fbef236e: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f73fbef2371: retq
+  0x00007f73fbef2372: hlt
+  0x00007f73fbef2373: hlt
+  0x00007f73fbef2374: hlt
+  0x00007f73fbef2375: hlt
+  0x00007f73fbef2376: hlt
+  0x00007f73fbef2377: hlt
+  0x00007f73fbef2378: hlt
+  0x00007f73fbef2379: hlt
+  0x00007f73fbef237a: hlt
+  0x00007f73fbef237b: hlt
+  0x00007f73fbef237c: hlt
+  0x00007f73fbef237d: hlt
+  0x00007f73fbef237e: hlt
+  0x00007f73fbef237f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f73fbef2380: jmpq    0x7f73f444e600    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f73fbef2385: callq   0x7f73fbef238a
+  0x00007f73fbef238a: subq    $0x5,(%rsp)
+  0x00007f73fbef238f: jmpq    0x7f73f44194a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f73fbef2394: hlt
+  0x00007f73fbef2395: hlt
+  0x00007f73fbef2396: hlt
+  0x00007f73fbef2397: hlt
+
+ImmutableOopMap{}pc offsets: 58 207581881,789 ops/s

@@ -1,0 +1,223 @@
+Compiled method (c1)     504  620       3       pl.jgardo.variables.VariableBenchmark::countHashWithoutFinals (23 bytes)
+ total in heap  [0x00007fe9dc885e10,0x00007fe9dc8862a0] = 1168
+ relocation     [0x00007fe9dc885f88,0x00007fe9dc885fc0] = 56
+ main code      [0x00007fe9dc885fc0,0x00007fe9dc886140] = 384
+ stub code      [0x00007fe9dc886140,0x00007fe9dc8861d0] = 144
+ oops           [0x00007fe9dc8861d0,0x00007fe9dc8861d8] = 8
+ metadata       [0x00007fe9dc8861d8,0x00007fe9dc8861e8] = 16
+ scopes data    [0x00007fe9dc8861e8,0x00007fe9dc886238] = 80
+ scopes pcs     [0x00007fe9dc886238,0x00007fe9dc886298] = 96
+ dependencies   [0x00007fe9dc886298,0x00007fe9dc8862a0] = 8
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.countHashWithoutFinals()I  [0x00007fe9dc885fc0, 0x00007fe9dc8861d0]  528 bytes
+Argument 0 is unknown.RIP: 0x7fe9dc885fc0 Code size: 0x00000210
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007fe9bd4c9d58} 'countHashWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0x60]  (sp of caller)
+  0x00007fe9dc885fc0: mov     0x8(%rsi),%r10d
+  0x00007fe9dc885fc4: movabs  $0x800000000,%r12
+  0x00007fe9dc885fce: add     %r12,%r10
+  0x00007fe9dc885fd1: xor     %r12,%r12
+  0x00007fe9dc885fd4: cmp     %rax,%r10
+  0x00007fe9dc885fd7: jne     0x7fe9dc20bc00    ;   {runtime_call ic_miss_stub}
+  0x00007fe9dc885fdd: nop
+[Verified Entry Point]
+  0x00007fe9dc885fe0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fe9dc885fe7: push    %rbp
+  0x00007fe9dc885fe8: sub     $0x50,%rsp
+  0x00007fe9dc885fec: movabs  $0x7fe9bd581348,%rax  ;   {metadata(method data for {method} {0x00007fe9bd4c9d58} 'countHashWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc885ff6: mov     0x104(%rax),%edi
+  0x00007fe9dc885ffc: add     $0x8,%edi
+  0x00007fe9dc885fff: mov     %edi,0x104(%rax)
+  0x00007fe9dc886005: and     $0x1ff8,%edi
+  0x00007fe9dc88600b: cmp     $0x0,%edi
+  0x00007fe9dc88600e: je      0x7fe9dc8860a0    ;*aload_0 {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithoutFinals@0 (line 60)
+
+  0x00007fe9dc886014: mov     %rsi,%rax
+  0x00007fe9dc886017: movabs  $0x7fe9bd581348,%rdi  ;   {metadata(method data for {method} {0x00007fe9bd4c9d58} 'countHashWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc886021: addq    $0x1,0x140(%rdi)
+  0x00007fe9dc886029: movabs  $0x7fe9bd5811e8,%rax  ;   {metadata(method data for {method} {0x00007fe9bd4c9e48} 'countHashPrivateWithoutFinals' '(I)I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc886033: mov     0x104(%rax),%edi
+  0x00007fe9dc886039: add     $0x8,%edi
+  0x00007fe9dc88603c: mov     %edi,0x104(%rax)
+  0x00007fe9dc886042: and     $0x7ffff8,%edi
+  0x00007fe9dc886048: cmp     $0x0,%edi
+  0x00007fe9dc88604b: je      0x7fe9dc8860c1
+  0x00007fe9dc886051: movabs  $0x7fe9bd581348,%rax  ;   {metadata(method data for {method} {0x00007fe9bd4c9d58} 'countHashWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc88605b: addq    $0x1,0x150(%rax)
+  0x00007fe9dc886063: movabs  $0x7fe9bd5811e8,%rax  ;   {metadata(method data for {method} {0x00007fe9bd4c9e48} 'countHashPrivateWithoutFinals' '(I)I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc88606d: mov     0x104(%rax),%esi
+  0x00007fe9dc886073: add     $0x8,%esi
+  0x00007fe9dc886076: mov     %esi,0x104(%rax)
+  0x00007fe9dc88607c: and     $0x7ffff8,%esi
+  0x00007fe9dc886082: cmp     $0x0,%esi
+  0x00007fe9dc886085: je      0x7fe9dc8860e2
+  0x00007fe9dc88608b: mov     $0x1a4,%eax
+  0x00007fe9dc886090: add     $0x50,%rsp
+  0x00007fe9dc886094: pop     %rbp
+  0x00007fe9dc886095: mov     0x108(%r15),%r10
+  0x00007fe9dc88609c: test    %eax,(%r10)       ;   {poll_return}
+  0x00007fe9dc88609f: retq
+  0x00007fe9dc8860a0: movabs  $0x7fe9bd4c9d58,%r10  ;   {metadata({method} {0x00007fe9bd4c9d58} 'countHashWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc8860aa: mov     %r10,0x8(%rsp)
+  0x00007fe9dc8860af: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fe9dc8860b7: callq   0x7fe9dc2d4500    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithoutFinals@-1 (line 60)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fe9dc8860bc: jmpq    0x7fe9dc886014
+  0x00007fe9dc8860c1: movabs  $0x7fe9bd4c9e48,%r10  ;   {metadata({method} {0x00007fe9bd4c9e48} 'countHashPrivateWithoutFinals' '(I)I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc8860cb: mov     %r10,0x8(%rsp)
+  0x00007fe9dc8860d0: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fe9dc8860d8: callq   0x7fe9dc2d4500    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashPrivateWithoutFinals@-1 (line 67)
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithoutFinals@2 (line 60)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fe9dc8860dd: jmpq    0x7fe9dc886051
+  0x00007fe9dc8860e2: movabs  $0x7fe9bd4c9e48,%r10  ;   {metadata({method} {0x00007fe9bd4c9e48} 'countHashPrivateWithoutFinals' '(I)I' in 'pl/jgardo/variables/VariableBenchmark')}
+  0x00007fe9dc8860ec: mov     %r10,0x8(%rsp)
+  0x00007fe9dc8860f1: movq    $0xffffffffffffffff,(%rsp)
+  0x00007fe9dc8860f9: callq   0x7fe9dc2d4500    ; ImmutableOopMap{}
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashPrivateWithoutFinals@-1 (line 67)
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithoutFinals@8 (line 61)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fe9dc8860fe: jmp     0x7fe9dc88608b
+  0x00007fe9dc886100: nop
+  0x00007fe9dc886101: nop
+  0x00007fe9dc886102: mov     0x420(%r15),%rax
+  0x00007fe9dc886109: movabs  $0x0,%r10
+  0x00007fe9dc886113: mov     %r10,0x420(%r15)
+  0x00007fe9dc88611a: movabs  $0x0,%r10
+  0x00007fe9dc886124: mov     %r10,0x428(%r15)
+  0x00007fe9dc88612b: add     $0x50,%rsp
+  0x00007fe9dc88612f: pop     %rbp
+  0x00007fe9dc886130: jmpq    0x7fe9dc2cf800    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007fe9dc886135: hlt
+  0x00007fe9dc886136: hlt
+  0x00007fe9dc886137: hlt
+  0x00007fe9dc886138: hlt
+  0x00007fe9dc886139: hlt
+  0x00007fe9dc88613a: hlt
+  0x00007fe9dc88613b: hlt
+  0x00007fe9dc88613c: hlt
+  0x00007fe9dc88613d: hlt
+  0x00007fe9dc88613e: hlt
+  0x00007fe9dc88613f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fe9dc886140: callq   0x7fe9dc2d1800    ;   {no_reloc}
+  0x00007fe9dc886145: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007fe9dc88614a: sub     $0x80,%rsp
+  0x00007fe9dc886151: mov     %rax,0x78(%rsp)
+  0x00007fe9dc886156: mov     %rcx,0x70(%rsp)
+  0x00007fe9dc88615b: mov     %rdx,0x68(%rsp)
+  0x00007fe9dc886160: mov     %rbx,0x60(%rsp)
+  0x00007fe9dc886165: mov     %rbp,0x50(%rsp)
+  0x00007fe9dc88616a: mov     %rsi,0x48(%rsp)
+  0x00007fe9dc88616f: mov     %rdi,0x40(%rsp)
+  0x00007fe9dc886174: mov     %r8,0x38(%rsp)
+  0x00007fe9dc886179: mov     %r9,0x30(%rsp)
+  0x00007fe9dc88617e: mov     %r10,0x28(%rsp)
+  0x00007fe9dc886183: mov     %r11,0x20(%rsp)
+  0x00007fe9dc886188: mov     %r12,0x18(%rsp)
+  0x00007fe9dc88618d: mov     %r13,0x10(%rsp)
+  0x00007fe9dc886192: mov     %r14,0x8(%rsp)
+  0x00007fe9dc886197: mov     %r15,(%rsp)
+  0x00007fe9dc88619b: movabs  $0x7fe9f9df3e9e,%rdi  ;   {external_word}
+  0x00007fe9dc8861a5: movabs  $0x7fe9dc886145,%rsi  ;   {internal_word}
+  0x00007fe9dc8861af: mov     %rsp,%rdx
+  0x00007fe9dc8861b2: and     $0xfffffffffffffff0,%rsp
+  0x00007fe9dc8861b6: callq   0x7fe9f99fc0f0    ;   {runtime_call MacroAssembler::debug64(char*, long, long*)}
+  0x00007fe9dc8861bb: hlt
+[Deopt Handler Code]
+  0x00007fe9dc8861bc: movabs  $0x7fe9dc8861bc,%r10  ;   {section_word}
+  0x00007fe9dc8861c6: push    %r10
+  0x00007fe9dc8861c8: jmpq    0x7fe9dc20d4a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007fe9dc8861cd: hlt
+  0x00007fe9dc8861ce: hlt
+  0x00007fe9dc8861cf: hlt
+
+ImmutableOopMap{rsi=Oop }pc offsets: 252 285
+ImmutableOopMap{}pc offsets: 318 Compiled method (c2)     515  624       4       pl.jgardo.variables.VariableBenchmark::countHashWithoutFinals (23 bytes)
+ total in heap  [0x00007fe9e3ce3790,0x00007fe9e3ce39e8] = 600
+ relocation     [0x00007fe9e3ce3908,0x00007fe9e3ce3918] = 16
+ main code      [0x00007fe9e3ce3920,0x00007fe9e3ce3980] = 96
+ stub code      [0x00007fe9e3ce3980,0x00007fe9e3ce3998] = 24
+ oops           [0x00007fe9e3ce3998,0x00007fe9e3ce39a0] = 8
+ metadata       [0x00007fe9e3ce39a0,0x00007fe9e3ce39a8] = 8
+ scopes data    [0x00007fe9e3ce39a8,0x00007fe9e3ce39b0] = 8
+ scopes pcs     [0x00007fe9e3ce39b0,0x00007fe9e3ce39e0] = 48
+ dependencies   [0x00007fe9e3ce39e0,0x00007fe9e3ce39e8] = 8
+----------------------------------------------------------------------
+pl/jgardo/variables/VariableBenchmark.countHashWithoutFinals()I  [0x00007fe9e3ce3920, 0x00007fe9e3ce3998]  120 bytes
+Argument 0 is unknown.RIP: 0x7fe9e3ce3920 Code size: 0x00000078
+[Entry Point]
+[Constants]
+  # {method} {0x00007fe9bd4c9d58} 'countHashWithoutFinals' '()I' in 'pl/jgardo/variables/VariableBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007fe9e3ce3920: mov     0x8(%rsi),%r10d
+  0x00007fe9e3ce3924: movabs  $0x800000000,%r12
+  0x00007fe9e3ce392e: add     %r12,%r10
+  0x00007fe9e3ce3931: xor     %r12,%r12
+  0x00007fe9e3ce3934: cmp     %r10,%rax
+  0x00007fe9e3ce3937: jne     0x7fe9dc20bc00    ;   {runtime_call ic_miss_stub}
+  0x00007fe9e3ce393d: nop
+[Verified Entry Point]
+  0x00007fe9e3ce3940: sub     $0x18,%rsp
+  0x00007fe9e3ce3947: mov     %rbp,0x10(%rsp)   ;*synchronization entry
+                                                ; - pl.jgardo.variables.VariableBenchmark::countHashWithoutFinals@-1 (line 60)
+
+  0x00007fe9e3ce394c: mov     $0x1a4,%eax
+  0x00007fe9e3ce3951: add     $0x10,%rsp
+  0x00007fe9e3ce3955: pop     %rbp
+  0x00007fe9e3ce3956: mov     0x108(%r15),%r10
+  0x00007fe9e3ce395d: test    %eax,(%r10)       ;   {poll_return}
+  0x00007fe9e3ce3960: retq
+  0x00007fe9e3ce3961: hlt
+  0x00007fe9e3ce3962: hlt
+  0x00007fe9e3ce3963: hlt
+  0x00007fe9e3ce3964: hlt
+  0x00007fe9e3ce3965: hlt
+  0x00007fe9e3ce3966: hlt
+  0x00007fe9e3ce3967: hlt
+  0x00007fe9e3ce3968: hlt
+  0x00007fe9e3ce3969: hlt
+  0x00007fe9e3ce396a: hlt
+  0x00007fe9e3ce396b: hlt
+  0x00007fe9e3ce396c: hlt
+  0x00007fe9e3ce396d: hlt
+  0x00007fe9e3ce396e: hlt
+  0x00007fe9e3ce396f: hlt
+  0x00007fe9e3ce3970: hlt
+  0x00007fe9e3ce3971: hlt
+  0x00007fe9e3ce3972: hlt
+  0x00007fe9e3ce3973: hlt
+  0x00007fe9e3ce3974: hlt
+  0x00007fe9e3ce3975: hlt
+  0x00007fe9e3ce3976: hlt
+  0x00007fe9e3ce3977: hlt
+  0x00007fe9e3ce3978: hlt
+  0x00007fe9e3ce3979: hlt
+  0x00007fe9e3ce397a: hlt
+  0x00007fe9e3ce397b: hlt
+  0x00007fe9e3ce397c: hlt
+  0x00007fe9e3ce397d: hlt
+  0x00007fe9e3ce397e: hlt
+  0x00007fe9e3ce397f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fe9e3ce3980: jmpq    0x7fe9dc2cf380    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fe9e3ce3985: callq   0x7fe9e3ce398a
+  0x00007fe9e3ce398a: subq    $0x5,(%rsp)
+  0x00007fe9e3ce398f: jmpq    0x7fe9dc20d4a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007fe9e3ce3994: hlt
+  0x00007fe9e3ce3995: hlt
+  0x00007fe9e3ce3996: hlt
+  0x00007fe9e3ce3997: hlt
