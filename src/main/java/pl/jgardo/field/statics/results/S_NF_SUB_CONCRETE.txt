@@ -1,0 +1,228 @@
+Compiled method (c1)     437  652       3       pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE (7 bytes)
+ total in heap  [0x00007f6d2d028e10,0x00007f6d2d029278] = 1128
+ relocation     [0x00007f6d2d028f88,0x00007f6d2d028fc0] = 56
+ main code      [0x00007f6d2d028fc0,0x00007f6d2d029120] = 352
+ stub code      [0x00007f6d2d029120,0x00007f6d2d0291b0] = 144
+ oops           [0x00007f6d2d0291b0,0x00007f6d2d0291b8] = 8
+ metadata       [0x00007f6d2d0291b8,0x00007f6d2d0291c8] = 16
+ scopes data    [0x00007f6d2d0291c8,0x00007f6d2d0291f0] = 40
+ scopes pcs     [0x00007f6d2d0291f0,0x00007f6d2d029260] = 112
+ dependencies   [0x00007f6d2d029260,0x00007f6d2d029268] = 8
+ nul chk table  [0x00007f6d2d029268,0x00007f6d2d029278] = 16
+Loaded disassembler from hsdis-amd64.so
+----------------------------------------------------------------------
+pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark.S_NF_SUB_CONCRETE()I  [0x00007f6d2d028fc0, 0x00007f6d2d0291b0]  496 bytes
+Argument 0 is unknown.RIP: 0x7f6d2d028fc0 Code size: 0x000001f0
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x00007f6d1cb99a90} 'S_NF_SUB_CONCRETE' '()I' in 'pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark'
+  #           [sp+0x40]  (sp of caller)
+  0x00007f6d2d028fc0: mov     0x8(%rsi),%r10d
+  0x00007f6d2d028fc4: shl     $0x3,%r10
+  0x00007f6d2d028fc8: movabs  $0x800000000,%r12
+  0x00007f6d2d028fd2: add     %r12,%r10
+  0x00007f6d2d028fd5: xor     %r12,%r12
+  0x00007f6d2d028fd8: cmp     %rax,%r10
+  0x00007f6d2d028fdb: jne     0x7f6d2c9a4d00    ;   {runtime_call ic_miss_stub}
+  0x00007f6d2d028fe1: nopw    0x0(%rax,%rax)
+  0x00007f6d2d028fec: nop
+  0x00007f6d2d028ff0: nopw    0x0(%rax,%rax)
+  0x00007f6d2d028ffb: nop
+  0x00007f6d2d028fff: nop
+[Verified Entry Point]
+  0x00007f6d2d029000: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f6d2d029007: push    %rbp
+  0x00007f6d2d029008: sub     $0x30,%rsp
+  0x00007f6d2d02900c: movabs  $0x7f6d1cbc1900,%rax  ;   {metadata(method data for {method} {0x00007f6d1cb99a90} 'S_NF_SUB_CONCRETE' '()I' in 'pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark')}
+  0x00007f6d2d029016: mov     0x104(%rax),%edi
+  0x00007f6d2d02901c: add     $0x8,%edi
+  0x00007f6d2d02901f: mov     %edi,0x104(%rax)
+  0x00007f6d2d029025: and     $0x1ff8,%edi
+  0x00007f6d2d02902b: cmp     $0x0,%edi
+  0x00007f6d2d02902e: je      0x7f6d2d029097
+  0x00007f6d2d029034: movabs  $0x7164c07a0,%rax  ;   {oop(a 'java/lang/Class'{0x00000007164c07a0} = 'pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark')}
+  0x00007f6d2d02903e: mov     0x7c(%rax),%eax
+  0x00007f6d2d029041: shl     $0x3,%rax         ;*getstatic S_NF_SUB_CONCRETE {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@0 (line 57)
+
+  0x00007f6d2d029045: cmp     (%rax),%rax       ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@3 (line 57)
+                                                ; implicit exception: dispatches to 0x00007f6d2d0290b8
+  0x00007f6d2d029048: movabs  $0x7f6d1cbc1900,%rsi  ;   {metadata(method data for {method} {0x00007f6d1cb99a90} 'S_NF_SUB_CONCRETE' '()I' in 'pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark')}
+  0x00007f6d2d029052: addq    $0x1,0x140(%rsi)
+  0x00007f6d2d02905a: movabs  $0x7f6d1cbc1c50,%rax  ;   {metadata(method data for {method} {0x00007f6d1cbc0d98} 'someMethodInvocation' '()I' in 'pl/jgardo/classes/hierarchy/with/FinalClass')}
+  0x00007f6d2d029064: mov     0x104(%rax),%esi
+  0x00007f6d2d02906a: add     $0x8,%esi
+  0x00007f6d2d02906d: mov     %esi,0x104(%rax)
+  0x00007f6d2d029073: and     $0x7ffff8,%esi
+  0x00007f6d2d029079: cmp     $0x0,%esi
+  0x00007f6d2d02907c: je      0x7f6d2d0290bd
+  0x00007f6d2d029082: mov     $0x5,%eax
+  0x00007f6d2d029087: add     $0x30,%rsp
+  0x00007f6d2d02908b: pop     %rbp
+  0x00007f6d2d02908c: mov     0x108(%r15),%r10
+  0x00007f6d2d029093: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f6d2d029096: retq
+  0x00007f6d2d029097: movabs  $0x7f6d1cb99a90,%r10  ;   {metadata({method} {0x00007f6d1cb99a90} 'S_NF_SUB_CONCRETE' '()I' in 'pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark')}
+  0x00007f6d2d0290a1: mov     %r10,0x8(%rsp)
+  0x00007f6d2d0290a6: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f6d2d0290ae: callq   0x7f6d2ca70300    ; ImmutableOopMap{rsi=Oop }
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@-1 (line 57)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f6d2d0290b3: jmpq    0x7f6d2d029034
+  0x00007f6d2d0290b8: callq   0x7f6d2ca6b920    ; ImmutableOopMap{rax=Oop }
+                                                ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@3 (line 57)
+                                                ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007f6d2d0290bd: movabs  $0x7f6d1cbc0d98,%r10  ;   {metadata({method} {0x00007f6d1cbc0d98} 'someMethodInvocation' '()I' in 'pl/jgardo/classes/hierarchy/with/FinalClass')}
+  0x00007f6d2d0290c7: mov     %r10,0x8(%rsp)
+  0x00007f6d2d0290cc: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f6d2d0290d4: callq   0x7f6d2ca70300    ; ImmutableOopMap{}
+                                                ;*synchronization entry
+                                                ; - pl.jgardo.classes.hierarchy.with.FinalClass::someMethodInvocation@-1 (line 6)
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@3 (line 57)
+                                                ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007f6d2d0290d9: jmp     0x7f6d2d029082
+  0x00007f6d2d0290db: nop
+  0x00007f6d2d0290dc: nop
+  0x00007f6d2d0290dd: mov     0x420(%r15),%rax
+  0x00007f6d2d0290e4: movabs  $0x0,%r10
+  0x00007f6d2d0290ee: mov     %r10,0x420(%r15)
+  0x00007f6d2d0290f5: movabs  $0x0,%r10
+  0x00007f6d2d0290ff: mov     %r10,0x428(%r15)
+  0x00007f6d2d029106: add     $0x30,%rsp
+  0x00007f6d2d02910a: pop     %rbp
+  0x00007f6d2d02910b: jmpq    0x7f6d2c9de100    ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007f6d2d029110: hlt
+  0x00007f6d2d029111: hlt
+  0x00007f6d2d029112: hlt
+  0x00007f6d2d029113: hlt
+  0x00007f6d2d029114: hlt
+  0x00007f6d2d029115: hlt
+  0x00007f6d2d029116: hlt
+  0x00007f6d2d029117: hlt
+  0x00007f6d2d029118: hlt
+  0x00007f6d2d029119: hlt
+  0x00007f6d2d02911a: hlt
+  0x00007f6d2d02911b: hlt
+  0x00007f6d2d02911c: hlt
+  0x00007f6d2d02911d: hlt
+  0x00007f6d2d02911e: hlt
+  0x00007f6d2d02911f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f6d2d029120: callq   0x7f6d2ca6d500    ;   {no_reloc}
+  0x00007f6d2d029125: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f6d2d02912a: sub     $0x80,%rsp
+  0x00007f6d2d029131: mov     %rax,0x78(%rsp)
+  0x00007f6d2d029136: mov     %rcx,0x70(%rsp)
+  0x00007f6d2d02913b: mov     %rdx,0x68(%rsp)
+  0x00007f6d2d029140: mov     %rbx,0x60(%rsp)
+  0x00007f6d2d029145: mov     %rbp,0x50(%rsp)
+  0x00007f6d2d02914a: mov     %rsi,0x48(%rsp)
+  0x00007f6d2d02914f: mov     %rdi,0x40(%rsp)
+  0x00007f6d2d029154: mov     %r8,0x38(%rsp)
+  0x00007f6d2d029159: mov     %r9,0x30(%rsp)
+  0x00007f6d2d02915e: mov     %r10,0x28(%rsp)
+  0x00007f6d2d029163: mov     %r11,0x20(%rsp)
+  0x00007f6d2d029168: mov     %r12,0x18(%rsp)
+  0x00007f6d2d02916d: mov     %r13,0x10(%rsp)
+  0x00007f6d2d029172: mov     %r14,0x8(%rsp)
+  0x00007f6d2d029177: mov     %r15,(%rsp)
+  0x00007f6d2d02917b: movabs  $0x7f6d4b58b432,%rdi  ;   {external_word}
+  0x00007f6d2d029185: movabs  $0x7f6d2d029125,%rsi  ;   {internal_word}
+  0x00007f6d2d02918f: mov     %rsp,%rdx
+  0x00007f6d2d029192: and     $0xfffffffffffffff0,%rsp
+  0x00007f6d2d029196: callq   0x7f6d4b1a90f0    ;   {runtime_call}
+  0x00007f6d2d02919b: hlt
+[Deopt Handler Code]
+  0x00007f6d2d02919c: movabs  $0x7f6d2d02919c,%r10  ;   {section_word}
+  0x00007f6d2d0291a6: push    %r10
+  0x00007f6d2d0291a8: jmpq    0x7f6d2c9a65a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f6d2d0291ad: hlt
+  0x00007f6d2d0291ae: hlt
+  0x00007f6d2d0291af: hlt
+
+ImmutableOopMap{rsi=Oop }pc offsets: 243
+ImmutableOopMap{rax=Oop }pc offsets: 253
+ImmutableOopMap{}pc offsets: 281 Compiled method (c2)     456  656       4       pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE (7 bytes)
+ total in heap  [0x00007f6d34481010,0x00007f6d344812c0] = 688
+ relocation     [0x00007f6d34481188,0x00007f6d34481198] = 16
+ main code      [0x00007f6d344811a0,0x00007f6d34481220] = 128
+ stub code      [0x00007f6d34481220,0x00007f6d34481238] = 24
+ oops           [0x00007f6d34481238,0x00007f6d34481240] = 8
+ metadata       [0x00007f6d34481240,0x00007f6d34481248] = 8
+ scopes data    [0x00007f6d34481248,0x00007f6d34481268] = 32
+ scopes pcs     [0x00007f6d34481268,0x00007f6d344812b8] = 80
+ dependencies   [0x00007f6d344812b8,0x00007f6d344812c0] = 8
+----------------------------------------------------------------------
+pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark.S_NF_SUB_CONCRETE()I  [0x00007f6d344811a0, 0x00007f6d34481238]  152 bytes
+Argument 0 is unknown.RIP: 0x7f6d344811a0 Code size: 0x00000098
+[Entry Point]
+[Constants]
+  # {method} {0x00007f6d1cb99a90} 'S_NF_SUB_CONCRETE' '()I' in 'pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark'
+  #           [sp+0x20]  (sp of caller)
+  0x00007f6d344811a0: mov     0x8(%rsi),%r10d
+  0x00007f6d344811a4: shl     $0x3,%r10
+  0x00007f6d344811a8: movabs  $0x800000000,%r12
+  0x00007f6d344811b2: add     %r12,%r10
+  0x00007f6d344811b5: xor     %r12,%r12
+  0x00007f6d344811b8: cmp     %r10,%rax
+  0x00007f6d344811bb: jne     0x7f6d2c9a4d00    ;   {runtime_call ic_miss_stub}
+  0x00007f6d344811c1: nop
+  0x00007f6d344811c4: nopl    0x0(%rax,%rax)
+  0x00007f6d344811cc: nop
+[Verified Entry Point]
+  0x00007f6d344811d0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f6d344811d7: push    %rbp
+  0x00007f6d344811d8: sub     $0x10,%rsp        ;*synchronization entry
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@-1 (line 57)
+
+  0x00007f6d344811dc: movabs  $0x7164c07a0,%r10  ;   {oop(a 'java/lang/Class'{0x00000007164c07a0} = 'pl/jgardo/field/statics/FinalClassWithHierarchyBenchmark')}
+  0x00007f6d344811e6: mov     0x7c(%r10),%r11d
+  0x00007f6d344811ea: test    %r11d,%r11d
+  0x00007f6d344811ed: je      0x7f6d34481204
+  0x00007f6d344811ef: mov     $0x5,%eax
+  0x00007f6d344811f4: add     $0x10,%rsp
+  0x00007f6d344811f8: pop     %rbp
+  0x00007f6d344811f9: mov     0x108(%r15),%r10
+  0x00007f6d34481200: test    %eax,(%r10)       ;   {poll_return}
+  0x00007f6d34481203: retq
+  0x00007f6d34481204: mov     $0xfffffff6,%esi
+  0x00007f6d34481209: nop
+  0x00007f6d3448120b: callq   0x7f6d2c9a6980    ; ImmutableOopMap{}
+                                                ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@3 (line 57)
+                                                ;   {runtime_call UncommonTrapBlob}
+  0x00007f6d34481210: ud2                       ;*invokevirtual someMethodInvocation {reexecute=0 rethrow=0 return_oop=0}
+                                                ; - pl.jgardo.field.statics.FinalClassWithHierarchyBenchmark::S_NF_SUB_CONCRETE@3 (line 57)
+
+  0x00007f6d34481212: hlt
+  0x00007f6d34481213: hlt
+  0x00007f6d34481214: hlt
+  0x00007f6d34481215: hlt
+  0x00007f6d34481216: hlt
+  0x00007f6d34481217: hlt
+  0x00007f6d34481218: hlt
+  0x00007f6d34481219: hlt
+  0x00007f6d3448121a: hlt
+  0x00007f6d3448121b: hlt
+  0x00007f6d3448121c: hlt
+  0x00007f6d3448121d: hlt
+  0x00007f6d3448121e: hlt
+  0x00007f6d3448121f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f6d34481220: jmpq    0x7f6d2ca6b200    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007f6d34481225: callq   0x7f6d3448122a
+  0x00007f6d3448122a: subq    $0x5,(%rsp)
+  0x00007f6d3448122f: jmpq    0x7f6d2c9a65a0    ;   {runtime_call DeoptimizationBlob}
+  0x00007f6d34481234: hlt
+  0x00007f6d34481235: hlt
+  0x00007f6d34481236: hlt
+  0x00007f6d34481237: hlt
+
+ImmutableOopMap{}pc offsets: 112
